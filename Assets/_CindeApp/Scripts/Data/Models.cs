@@ -16,11 +16,22 @@ namespace Cinde {
     }
     [Serializable]
     public class Avatar {
-        public AvatarComponent[] HeadShape;
-        public AvatarComponent[] Face;
-        public AvatarComponent[] Dress;
-        public Moods moods;
+        public AvatarComponent HeadShape;
+        public AvatarComponent Face;
+        public AvatarComponent Dress;
+        public Moods mood;
     }
+    public class HeadShapes {
+        public AvatarComponent[] HeadShapesList;
+    }
+    public class Faces {
+        public AvatarComponent[] FacesList;
+    }
+    public class Dresses {
+        public AvatarComponent[] DressList;
+
+    }
+
     [Serializable]
     public class AvatarComponent {
         [SerializeField] private Sprite partSprite;
