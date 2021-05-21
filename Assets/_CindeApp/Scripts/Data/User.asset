@@ -12,3 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8503d96aa34719e45901fc75d46fa55a, type: 3}
   m_Name: User
   m_EditorClassIdentifier: 
+  user:
+    userName: R3vival
+    avatar:
+      HeadShape:
+        id: 0
+        setId: 0
+        partSprite: {fileID: 0}
+      Face:
+        id: 0
+        setId: 0
+        partSprite: {fileID: 0}
+        mood: 0
+      Dress:
+        id: 0
+        setId: 0
+        partSprite: {fileID: 0}
+      mood: 0
+  headsList:
+    HeadShapesList: []
+  facesList:
+    FacesList:
+    - id: 0
+      setId: 0
+      partSprite: {fileID: 0}
+      mood: 0
+  dressesList:
+    DressList: []

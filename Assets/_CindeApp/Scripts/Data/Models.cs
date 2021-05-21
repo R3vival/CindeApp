@@ -17,16 +17,19 @@ namespace Cinde {
     [Serializable]
     public class Avatar {
         public AvatarComponent HeadShape;
-        public AvatarComponent Face;
+        public FaceAvatarComponent Face;
         public AvatarComponent Dress;
         public Moods mood;
     }
+    [Serializable]
     public class HeadShapes {
         public AvatarComponent[] HeadShapesList;
     }
+    [Serializable]
     public class Faces {
-        public AvatarComponent[] FacesList;
+        public FaceAvatarComponent[] FacesList;
     }
+    [Serializable]
     public class Dresses {
         public AvatarComponent[] DressList;
 
@@ -34,11 +37,17 @@ namespace Cinde {
 
     [Serializable]
     public class AvatarComponent {
+        public int id;
+        public int setId;
         [SerializeField] private Sprite partSprite;
 
         public Sprite PartSprite { get => partSprite; set => partSprite = value; }
     }
-
+    [Serializable]
+    public class FaceAvatarComponent : AvatarComponent
+    {
+        public Moods mood;
+    }
     public enum Moods {
         Happy,
         Sad,
