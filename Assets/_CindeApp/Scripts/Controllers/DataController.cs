@@ -6,10 +6,20 @@ using UnityEngine;
 namespace Cinde {
     public class DataController : MonoBehaviour {
         #region Declarations
+        public static DataController instance;
         [SerializeField] private UserScriptableObject userData;
         #endregion
 
-        
+        #region UnityRegion
+        private void Start() {
+            if (instance)
+                Destroy(this.gameObject);
+            else
+                instance = this;
+
+            DontDestroyOnLoad(gameObject);
+        }
+        #endregion
         public User CreateUser(string name, Avatar avatar)
         {
             User newUser = new User();

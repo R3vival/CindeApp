@@ -30,7 +30,16 @@ MonoBehaviour:
         partSprite: {fileID: 0}
       mood: 0
   headsList:
-    HeadShapesList: []
+    HeadShapesList:
+    - id: 0
+      setId: 0
+      partSprite: {fileID: 0}
+    - id: 0
+      setId: 0
+      partSprite: {fileID: 0}
+    - id: 0
+      setId: 0
+      partSprite: {fileID: 0}
   facesList:
     FacesList:
     - id: 0
