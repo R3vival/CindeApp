@@ -167,5 +167,19 @@ namespace Cinde {
             return (AvatarComponent[])userData.headsList.HeadShapesList.Where(x => x.setId == setId);
         }
         #endregion
+        #region Activity One
+        public void SaveMovieName(string name)
+        {
+            userData.movieName = name;
+        }
+        public void SaveMovieSlogan(string slogan)
+        {
+            userData.slogan = slogan;
+        }
+        public void SaveMoviePosterBackground(int index)
+        {
+            userData.posterBackground = index;
+        }
+        #endregion
     }
 }

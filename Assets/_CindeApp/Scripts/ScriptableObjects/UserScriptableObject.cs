@@ -11,5 +11,10 @@ namespace Cinde {
         public HeadShapes headsList;
         public Faces facesList;
         public Dresses dressesList;
+        [Header("Activity One DB")]
+        public string movieName;
+        public string slogan;
+        public int posterBackground;
+        public string[] protagonistas;
     }
 }
