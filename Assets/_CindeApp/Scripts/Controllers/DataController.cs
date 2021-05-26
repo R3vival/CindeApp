@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿///By R3-Santiago
 using System.Linq;
 using UnityEngine;
 
@@ -8,6 +7,7 @@ namespace Cinde {
         #region Declarations
         public static DataController instance;
         [SerializeField] private UserScriptableObject userData;
+        [SerializeField] private ActivityOne currentActivity;
         #endregion
 
         #region UnityRegion
@@ -20,8 +20,7 @@ namespace Cinde {
             DontDestroyOnLoad(gameObject);
         }
         #endregion
-        public User CreateUser(string name, Avatar avatar)
-        {
+        public User CreateUser(string name, Avatar avatar) {
             User newUser = new User();
 
             newUser.UserName = name;
@@ -69,8 +68,7 @@ namespace Cinde {
         /// Set Avatar to Current User
         /// </summary>
         /// <param name="avatar"></param>
-        public void SetUserAvatar(Avatar avatar)
-        {
+        public void SetUserAvatar(Avatar avatar) {
             userData.user.Avatar = avatar;
         }
         /// <summary>
@@ -98,16 +96,14 @@ namespace Cinde {
         /// Set face in current User
         /// </summary>
         /// <param name="face"></param>
-        public void SetUserFace(FaceAvatarComponent face)
-        {
+        public void SetUserFace(FaceAvatarComponent face) {
             userData.user.Avatar.Face = face;
             userData.user.Avatar.mood = face.mood;
         }
-        public void SetAvatarMood(Moods mood)
-        {
+        public void SetAvatarMood(Moods mood) {
             FaceAvatarComponent currentFace = userData.user.Avatar.Face;
-            FaceAvatarComponent tempFace = (FaceAvatarComponent)GetFaceSetById(currentFace.setId).Where(x => x.mood == mood);
 
+            FaceAvatarComponent tempFace = (FaceAvatarComponent)GetFaceSetById(currentFace.setId).Where(x => x.mood == mood);
             userData.user.Avatar.Face = tempFace;
             userData.user.Avatar.mood = tempFace.mood;
         }
@@ -117,8 +113,7 @@ namespace Cinde {
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public FaceAvatarComponent GetFaceByID(int id)
-        {
+        public FaceAvatarComponent GetFaceByID(int id) {
             return (FaceAvatarComponent)userData.facesList.FacesList.Where(x => x.id == id);
         }
         /// <summary>
@@ -126,8 +121,7 @@ namespace Cinde {
         /// </summary>
         /// <param name="setId"></param>
         /// <returns></returns>
-        public FaceAvatarComponent[] GetFaceSetById(int setId)
-        {
+        public FaceAvatarComponent[] GetFaceSetById(int setId) {
             return (FaceAvatarComponent[])userData.facesList.FacesList.Where(x => x.setId == setId);
         }
         /// <summary>
@@ -135,8 +129,7 @@ namespace Cinde {
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public AvatarComponent GetDressById(int id)
-        {
+        public AvatarComponent GetDressById(int id) {
             return (AvatarComponent)userData.dressesList.DressList.Where(x => x.id == id);
         }
         /// <summary>
@@ -144,8 +137,7 @@ namespace Cinde {
         /// </summary>
         /// <param name="setId"></param>
         /// <returns></returns>
-        public AvatarComponent[] GetDressSetById(int setId)
-        {
+        public AvatarComponent[] GetDressSetById(int setId) {
             return (AvatarComponent[])userData.dressesList.DressList.Where(x => x.setId == setId);
         }
         /// <summary>
@@ -153,8 +145,7 @@ namespace Cinde {
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public AvatarComponent GetFaceShapeById(int id)
-        {
+        public AvatarComponent GetFaceShapeById(int id) {
             return (AvatarComponent)userData.headsList.HeadShapesList.Where(x => x.id == id);
         }
         /// <summary>
@@ -162,23 +153,38 @@ namespace Cinde {
         /// </summary>
         /// <param name="setId"></param>
         /// <returns></returns>
-        public AvatarComponent[] GetFaceShapeSetsById(int setId)
-        {
+        public AvatarComponent[] GetFaceShapeSetsById(int setId) {
             return (AvatarComponent[])userData.headsList.HeadShapesList.Where(x => x.setId == setId);
         }
         #endregion
         #region Activity One
-        public void SaveMovieName(string name)
-        {
-            userData.movieName = name;
+        public void NewActivity() {
+            currentActivity = new ActivityOne();
         }
-        public void SaveMovieSlogan(string slogan)
-        {
-            userData.slogan = slogan;
+        public void SaveMovieName(string name) {
+            currentActivity.MovieName = name;
         }
-        public void SaveMoviePosterBackground(int index)
-        {
-            userData.posterBackground = index;
+        public void SaveMovieSlogan(string slogan) {
+            currentActivity.Slogan = slogan;
+        }
+        public void SaveMoviePosterBackground(int index) {
+            currentActivity.PosterBackground = index;
+        }
+        public void SaveMainActor(string character) {
+            if (character != "")
+                currentActivity.MainActor.Add(character);
+        }
+        public void SaveMovieCharacter(int index) {
+            currentActivity.MainCharacter = index;
+        }
+        public void SaveMovieReflex(string reflex) {
+            currentActivity.Reflex = reflex;
+        }
+        public ActivityOne getcurrentActivity() {
+            return currentActivity;
+        }
+        public void SaveActivity() {
+            userData.activityOneList.Add(currentActivity);
         }
         #endregion
     }

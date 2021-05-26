@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿///By R3-Santiago
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,6 +47,14 @@ namespace Cinde {
     public class FaceAvatarComponent : AvatarComponent
     {
         public Moods mood;
+    }
+    public class ActivityOne {
+        public string MovieName;
+        public string Slogan;
+        public int PosterBackground;
+        public List<string> MainActor;
+        public int MainCharacter;
+        public string Reflex;
     }
     public enum Moods {
         Happy,
