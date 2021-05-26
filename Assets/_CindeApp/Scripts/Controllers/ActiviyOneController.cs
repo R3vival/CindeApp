@@ -9,4 +9,7 @@ public class ActiviyOneController : MonoBehaviour
         
     }
     #endregion
+    #region Activity Functions
+
+    #endregion
 }
