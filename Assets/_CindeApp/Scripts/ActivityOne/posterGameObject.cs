@@ -17,7 +17,7 @@ public class posterGameObject : MonoBehaviour
 
     [Header("Poster Assets")]
     public List<Sprite> BackgroundImages, CharactersImages;
-
+    public List<Color> backgroundImageColors, characterImageColors;
     #endregion
     #region Poster GameObject Functions
     public void DrawPoster(Cinde.ActivityOne movie) {
@@ -31,8 +31,11 @@ public class posterGameObject : MonoBehaviour
                 MovieActors.text +=" • "+ movie.MainActor[i];
         }
 
-        PosterBackground.sprite = BackgroundImages[movie.PosterBackground];
-        Character.sprite = CharactersImages[movie.MainCharacter];
+        PosterBackground.sprite = BackgroundImages[0];        
+        PosterBackground.color = backgroundImageColors[movie.PosterBackground-1];
+
+        Character.sprite = CharactersImages[0];
+        Character.color = characterImageColors[movie.MainCharacter-1];
     }
     #endregion
 }

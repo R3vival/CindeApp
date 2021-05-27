@@ -63,8 +63,8 @@ public class ActivityOneController : MonoBehaviour
     public void SavePosterBackground(int index) {
         Cinde.DataController.instance.SaveMoviePosterBackground(index);
     }
-    public void SaveMovieMainCharacters(TMP_InputField characterInputField) {
-        Cinde.DataController.instance.SaveMainActor(characterInputField.text);
+    public void SaveMovieMainActors(TMP_InputField actorsInputField) {
+        Cinde.DataController.instance.SaveMainActor(actorsInputField.text);
     }
     public void SaveCharacter(int index) {
         Cinde.DataController.instance.SaveMovieCharacter(index);

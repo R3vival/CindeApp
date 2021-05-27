@@ -159,7 +159,7 @@ namespace Cinde {
         #endregion
         #region Activity One
         public void NewActivity() {
-            currentActivity = new ActivityOne();
+            currentActivity = new ActivityOne();            
         }
         public void SaveMovieName(string name) {
             currentActivity.MovieName = name;

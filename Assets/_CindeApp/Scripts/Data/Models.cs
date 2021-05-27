@@ -48,6 +48,7 @@ namespace Cinde {
     {
         public Moods mood;
     }
+    [Serializable]
     public class ActivityOne {
         public string MovieName;
         public string Slogan;
@@ -55,6 +56,10 @@ namespace Cinde {
         public List<string> MainActor;
         public int MainCharacter;
         public string Reflex;
+
+        public ActivityOne() {
+            MainActor = new List<string>();
+        }
     }
     public enum Moods {
         Happy,
