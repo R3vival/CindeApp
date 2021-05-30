@@ -8,8 +8,6 @@ public class ActivityOneController : MonoBehaviour
 {
     #region Declarations
     [SerializeField] private GameObject stepOnePanel, stepTwoPanel, stepThreePanel;
-    [Space]
-    [SerializeField] private Steps currentStep;
     [Header("Assets")]
     [SerializeField] private TMP_InputField nameInputField;
     [SerializeField] private TMP_InputField sloganInputField;
@@ -25,33 +23,10 @@ public class ActivityOneController : MonoBehaviour
         stepThreePanel.SetActive(false);
 
         ///Set current step as first
-        currentStep = Steps.First;
         Cinde.DataController.instance.NewActivity();
     }
     #endregion
     #region Activity Functions
-    public void SwitchStep()
-    {
-        switch (currentStep)
-        {
-            case Steps.First:
-                currentStep = Steps.Second;
-                stepOnePanel.SetActive(false);
-                stepTwoPanel.SetActive(true);
-                stepThreePanel.SetActive(false);
-                break;
-            case Steps.Second:
-                currentStep = Steps.Third;
-                stepOnePanel.SetActive(false);
-                stepTwoPanel.SetActive(false);
-                stepThreePanel.SetActive(true);
-                ShowPoster();
-                break;
-            case Steps.Third:
-            default:
-                break;
-        }        
-    }
     public void SaveMovieName()
     {
         Cinde.DataController.instance.SaveMovieName(nameInputField.text);
@@ -76,9 +51,7 @@ public class ActivityOneController : MonoBehaviour
         poster.DrawPoster(Cinde.DataController.instance.getcurrentActivity());
     }
     public void SaveActivity() {
-        if(currentStep == Steps.Third) {
             Cinde.DataController.instance.SaveActivity();
-        }
     }
     #endregion
     
