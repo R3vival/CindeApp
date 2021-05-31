@@ -7,58 +7,109 @@ using UnityEngine;
 public class ActivityOneController : MonoBehaviour
 {
     #region Declarations
-    [SerializeField] private GameObject stepOnePanel, stepTwoPanel, stepThreePanel;
+    [SerializeField] private GameObject activityPanel;
     [Header("Assets")]
-    [SerializeField] private TMP_InputField nameInputField;
-    [SerializeField] private TMP_InputField sloganInputField;
     [SerializeField] private posterGameObject poster;
+    [SerializeField] private GameObject body;
+    [SerializeField] private GameObject backBtn;
 
     #endregion
     #region Unity Functions
     private void Start() {
-        ///First panel active self equals true
-        ///Second and Third panel active self equals false
-        stepOnePanel.SetActive(true);
-        stepTwoPanel.SetActive(false);
-        stepThreePanel.SetActive(false);
+        ///Set activity panel as True to prevent failures 
+        activityPanel.SetActive(true);
 
         ///Set current step as first
         Cinde.DataController.instance.NewActivity();
     }
     #endregion
     #region Activity Functions
-    public void SaveMovieName()
+    /// <summary>
+    /// Save Movie Director
+    /// </summary>
+    /// <param name="directorInputField"></param>
+    public void SaveMovieDirector(TMP_InputField directorInputField) {
+        Cinde.DataController.instance.SaveDirector(directorInputField.text);
+    }
+    /// <summary>
+    /// Save Movie Name
+    /// </summary>
+    /// <param name="nameInputField"></param>
+    public void SaveMovieName(TMP_InputField nameInputField)
     {
         Cinde.DataController.instance.SaveMovieName(nameInputField.text);
     }
-    public void SaveMovieSlogan()
-    {
-        Cinde.DataController.instance.SaveMovieSlogan(sloganInputField.text);
+    /// <summary>
+    /// Save Movie Main Actor
+    /// </summary>
+    /// <param name="actorsInputField"></param>
+    public void SaveMovieMainActors(TMP_InputField actorsInputField) {
+        ///Sprint GameObject name to get actor index
+        string indexStrg = actorsInputField.name.Split('_')[1];
+        ///Parsing string to index
+        int index = int.Parse(indexStrg);
+
+        Cinde.DataController.instance.SaveMainActor(actorsInputField.text, index);
+    }/// <summary>
+    /// Save Movie Genre
+    /// </summary>
+    /// <param name="genreDropDown"></param>
+    public void SaveMovieGenre(TMP_Dropdown genreDropDown) {
+        Cinde.DataController.instance.SaveMovieGenre(genreDropDown.options[genreDropDown.value].text);
     }
+    /// <summary>
+    /// Save Movie Year
+    /// </summary>
+    /// <param name="yearInputField"></param>
+    public void SaveMovieYear(TMP_InputField yearInputField) {
+        Cinde.DataController.instance.SaveMovieYear(int.Parse(yearInputField.text));
+    }
+    /// <summary>
+    /// Save Movie sound band
+    /// </summary>
+    /// <param name="bandInputField"></param>
+    public void SaveMovieBand(TMP_InputField bandInputField) {
+        Cinde.DataController.instance.SaveMovieSoundBand(bandInputField.text);
+    }
+    /// <summary>
+    /// Save Movie Poster Background
+    /// </summary>
+    /// <param name="index"></param>
     public void SavePosterBackground(int index) {
         Cinde.DataController.instance.SaveMoviePosterBackground(index);
     }
-    public void SaveMovieMainActors(TMP_InputField actorsInputField) {
-        Cinde.DataController.instance.SaveMainActor(actorsInputField.text);
-    }
-    public void SaveCharacter(int index) {
-        Cinde.DataController.instance.SaveMovieCharacter(index);
-    }
+    /// <summary>
+    /// Save movie Reflex
+    /// </summary>
+    /// <param name="reflexInputField"></param>
     public void SaveReflex(TMP_InputField reflexInputField) {
         Cinde.DataController.instance.SaveMovieReflex(reflexInputField.text);
     }
+    /// <summary>
+    /// Show Poster
+    /// </summary>
     public void ShowPoster() {
+        backBtn.SetActive(true);
         poster.DrawPoster(Cinde.DataController.instance.getcurrentActivity());
     }
+    public void BackPoster() {
+        backBtn.SetActive(false);
+        poster.gameObject.SetActive(true);
+    }
+    /// <summary>
+    /// Save movie To DB
+    /// </summary>
     public void SaveActivity() {
             Cinde.DataController.instance.SaveActivity();
     }
     #endregion
     
 }
-public enum Steps
+public enum Genres
 {
-    First,
-    Second,
-    Third
+    Accion,
+    Terror,
+    Suspenso,
+    Comedia,
+    Drama,
 }

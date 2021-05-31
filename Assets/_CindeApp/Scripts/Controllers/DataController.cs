@@ -7,7 +7,7 @@ namespace Cinde {
         #region Declarations
         public static DataController instance;
         [SerializeField] private UserScriptableObject userData;
-        [SerializeField] private ActivityOne currentActivity;
+        [SerializeField] private ActivityOne currentActivityOne;
         #endregion
 
         #region UnityRegion
@@ -157,34 +157,48 @@ namespace Cinde {
             return (AvatarComponent[])userData.headsList.HeadShapesList.Where(x => x.setId == setId);
         }
         #endregion
-        #region Activity One
+        #region Activity
         public void NewActivity() {
-            currentActivity = new ActivityOne();            
+            currentActivityOne = new ActivityOne();
+        }
+        #endregion
+        #region Activity One
+        public void SaveDirector(string director) {
+            currentActivityOne.Director = director;
         }
         public void SaveMovieName(string name) {
-            currentActivity.MovieName = name;
+            currentActivityOne.MovieName = name;
         }
-        public void SaveMovieSlogan(string slogan) {
-            currentActivity.Slogan = slogan;
+        public void SaveMainActor(string character, int index) {
+            if (character != "")
+                if (currentActivityOne.MainActors.Count >= index)
+                    currentActivityOne.MainActors[index-1] = character;
+                else
+                    currentActivityOne.MainActors.Add(character);
+        }
+        public void SaveMovieGenre(string genre) {
+            currentActivityOne.Genre = genre;
+        }
+        public void SaveMovieYear(int year) {
+            currentActivityOne.Year = year;
+        }
+        public void SaveMovieSoundBand(string soundBand) {
+            currentActivityOne.SoundBand = soundBand;
         }
         public void SaveMoviePosterBackground(int index) {
-            currentActivity.PosterBackground = index;
+            currentActivityOne.PosterBackground = index;
         }
-        public void SaveMainActor(string character) {
-            if (character != "")
-                currentActivity.MainActor.Add(character);
-        }
-        public void SaveMovieCharacter(int index) {
-            currentActivity.MainCharacter = index;
+        public void SaveMovieAward(int index) {
+            currentActivityOne.Award = index;
         }
         public void SaveMovieReflex(string reflex) {
-            currentActivity.Reflex = reflex;
+            currentActivityOne.Reflex = reflex;
         }
         public ActivityOne getcurrentActivity() {
-            return currentActivity;
+            return currentActivityOne;
         }
         public void SaveActivity() {
-            userData.activityOneList.Add(currentActivity);
+            userData.activityOneList.Add(currentActivityOne);
         }
         #endregion
     }

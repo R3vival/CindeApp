@@ -50,15 +50,18 @@ namespace Cinde {
     }
     [Serializable]
     public class ActivityOne {
+        public string Director;
         public string MovieName;
-        public string Slogan;
+        public List<string> MainActors;
+        public string Genre;
+        public int Year;
+        public string SoundBand;
         public int PosterBackground;
-        public List<string> MainActor;
-        public int MainCharacter;
+        public int Award;
         public string Reflex;
 
         public ActivityOne() {
-            MainActor = new List<string>();
+            MainActors = new List<string>();
         }
     }
     public enum Moods {
