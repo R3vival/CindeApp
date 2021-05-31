@@ -29,20 +29,29 @@ public class posterGameObject : MonoBehaviour {
     #endregion
     #region Poster GameObject Functions
     public void DrawPoster(Cinde.ActivityOne movie) {
+        MovieDirector.text = movie.Director;
         MovieName.text = movie.MovieName;
+        
+        if(movie.MainActors.Count > 0) {
+            MovieActor_1.text = movie.MainActors[0];
+            if(movie.MainActors.Count >= 2) {
+                MovieActor_2.text = movie.MainActors.Count == 2 ? "•" : movie.MainActors[1];
+                MovieActor_3.text = movie.MainActors.Count == 2 ? movie.MainActors[1] : movie.MainActors[2];
+            }
+        }
 
-        //for (int i = 0; i < movie.MainActors.Count; i++) {
-        //    if (i == 0)
-        //        MovieActors.text = movie.MainActors[i];
-        //    else
-        //        MovieActors.text += " • " + movie.MainActors[i];
-        //}
+        Year.text = "Año: " + movie.Year;
+        Genre.text = "Genero: " + movie.Genre;
+        SoundBand.text = "Banda Sonora: " + movie.SoundBand;
 
         PosterBackground.sprite = BackgroundImages[0];
         PosterBackground.color = backgroundImageColors[movie.PosterBackground - 1];
 
-        Character.sprite = CharactersImages[0];
+        //TODO SET AVATAR INTO CHARACTER 
+        //Character.sprite = CharactersImages[0];
         //Character.color = characterImageColors[movie.MainCharacter-1];
+
+
         gameObject.SetActive(true);
     }
     #endregion

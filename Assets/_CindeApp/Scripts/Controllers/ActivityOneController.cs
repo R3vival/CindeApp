@@ -44,12 +44,8 @@ public class ActivityOneController : MonoBehaviour
     /// </summary>
     /// <param name="actorsInputField"></param>
     public void SaveMovieMainActors(TMP_InputField actorsInputField) {
-        ///Sprint GameObject name to get actor index
-        string indexStrg = actorsInputField.name.Split('_')[1];
-        ///Parsing string to index
-        int index = int.Parse(indexStrg);
 
-        Cinde.DataController.instance.SaveMainActor(actorsInputField.text, index);
+        Cinde.DataController.instance.SaveMainActor(actorsInputField.text, GetIndex(actorsInputField.name));
     }/// <summary>
     /// Save Movie Genre
     /// </summary>
@@ -78,6 +74,12 @@ public class ActivityOneController : MonoBehaviour
     public void SavePosterBackground(int index) {
         Cinde.DataController.instance.SaveMoviePosterBackground(index);
     }
+    public void SavePosterAward(GameObject Award) {
+        if (!Cinde.DataController.instance.SaveMovieAward(GetIndex(Award.name)))
+            Award.SetActive(true);
+        else
+            Award.SetActive(false);
+    }
     /// <summary>
     /// Save movie Reflex
     /// </summary>
@@ -101,6 +103,12 @@ public class ActivityOneController : MonoBehaviour
     /// </summary>
     public void SaveActivity() {
             Cinde.DataController.instance.SaveActivity();
+    }
+    private int GetIndex(string text) {
+        ///Sprint GameObject name to get actor index
+        string indexStrg = text.Split('_')[1];
+        ///Parsing string to index
+        return int.Parse(indexStrg);
     }
     #endregion
     

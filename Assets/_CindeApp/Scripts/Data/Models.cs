@@ -57,7 +57,7 @@ namespace Cinde {
         public int Year;
         public string SoundBand;
         public int PosterBackground;
-        public int Award;
+        public List<int> Award;
         public string Reflex;
 
         public ActivityOne() {

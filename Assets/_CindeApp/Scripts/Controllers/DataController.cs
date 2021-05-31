@@ -188,8 +188,13 @@ namespace Cinde {
         public void SaveMoviePosterBackground(int index) {
             currentActivityOne.PosterBackground = index;
         }
-        public void SaveMovieAward(int index) {
-            currentActivityOne.Award = index;
+        public bool SaveMovieAward(int index) {
+            if (currentActivityOne.Award.Contains(index))
+                return false;
+            else {
+                currentActivityOne.Award.Add(index);
+                return true;
+            }
         }
         public void SaveMovieReflex(string reflex) {
             currentActivityOne.Reflex = reflex;
