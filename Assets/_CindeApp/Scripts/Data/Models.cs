@@ -62,6 +62,7 @@ namespace Cinde {
 
         public ActivityOne() {
             MainActors = new List<string>();
+            Award = new List<int>();
         }
     }
     public enum Moods {

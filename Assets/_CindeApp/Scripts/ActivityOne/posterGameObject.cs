@@ -45,7 +45,7 @@ public class posterGameObject : MonoBehaviour {
         SoundBand.text = "Banda Sonora: " + movie.SoundBand;
 
         PosterBackground.sprite = BackgroundImages[0];
-        PosterBackground.color = backgroundImageColors[movie.PosterBackground - 1];
+        //PosterBackground.color = backgroundImageColors[movie.PosterBackground - 1];
 
         //TODO SET AVATAR INTO CHARACTER 
         //Character.sprite = CharactersImages[0];
