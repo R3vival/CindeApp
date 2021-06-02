@@ -17,4 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_CindeApp/Scenes/ActivityOne.unity
     guid: 041db46bb6bb45e439f989f9445c24dd
+  - enabled: 1
+    path: Assets/Scenes/Actividad3.unity
+    guid: ff0b9091ff3d5574c95d7b1d6196df19
+  - enabled: 1
+    path: Assets/Scenes/Actividad3_1_1.unity
+    guid: b3fc37889c6acd64d83c955ec1287043
+  - enabled: 1
+    path: Assets/Scenes/Actividad3_2.unity
+    guid: 9b63dbec7778ac440a656ae9967ffcfb
+  - enabled: 1
+    path: Assets/Scenes/Actividad3_4.unity
+    guid: b1d11276cd948b14b9ab2a92368c829a
+  - enabled: 1
+    path: Assets/Scenes/Actividad3_5.unity
+    guid: c3c1832333bd0e74d99d8c3c13659fd5
+  - enabled: 1
+    path: Assets/Scenes/Actividad3_6.unity
+    guid: 92fda4f259308e74d8bf3e87a418def1
   m_configObjects: {}
