@@ -31,4 +31,5 @@ public class Scenes {
     public static string ActivityTwo = "ActivityTwo";
     public static string ActivityThree = "ActivityThree";
     public static string ActivityFour = "ActivityFour";
+    public static string ActivityFive = "ActivityFive";
 }
