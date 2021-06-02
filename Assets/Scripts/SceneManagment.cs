@@ -7,28 +7,36 @@ public class SceneManagment : MonoBehaviour
 {
     public void EditCharacter()
     {
-        ///Never Use int value to load Scenes
-        SceneManager.LoadScene(Scenes.CreateAvatar);
-    }
-    public void LoadActivityOne() {
-        SceneManager.LoadScene(Scenes.ActivityOne);
-    }
-    public void LoadActivityTwo() {
-        SceneManager.LoadScene(Scenes.ActivityTwo);
-    }
-    public void LoadActivityThree() {
-        SceneManager.LoadScene(Scenes.ActivityThree);
-    }
-    public void LoadActivityFour() {
-        SceneManager.LoadScene(Scenes.ActivityFour);
+        SceneManager.LoadScene(0);
     }
 
-}
-public class Scenes {
-    public static string MainScene = "MenuPrincipal";
-    public static string CreateAvatar = "CreateCharacter";
-    public static string ActivityOne = "ActivityOne";
-    public static string ActivityTwo = "ActivityTwo";
-    public static string ActivityThree = "ActivityThree";
-    public static string ActivityFour = "ActivityFour";
+    public void Actividaddos()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void Actividaddospartedos()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void Actividaddospartetres()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void Actividaddospartecuatro()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void Actividaddospartecinco()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void Actividaddosparteseis()
+    {
+        SceneManager.LoadScene(9);
+    }
 }
