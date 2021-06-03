@@ -16,7 +16,7 @@ namespace Cinde {
     }
     [Serializable]
     public class Avatar {
-        public int HeadShapeID;
+        public int BodyShapeID;
         public int HairCutID;
         public int BackHairCutID;
         public int FaceID;

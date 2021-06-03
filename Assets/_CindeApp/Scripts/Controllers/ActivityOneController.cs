@@ -3,15 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActivityOneController : MonoBehaviour
 {
     #region Declarations
     [SerializeField] private GameObject activityPanel;
-    [Header("Assets")]
+    [Header("Assets")]    
     [SerializeField] private posterGameObject poster;
     [SerializeField] private GameObject body;
     [SerializeField] private GameObject backBtn;
+    [Header("Avatar Assets")]
+    [SerializeField] private Image AvatarBody;
+    [SerializeField] private Image AvatarHaircut;
+    [SerializeField] private Image AvatarBackHaircut;
+    [SerializeField] private Image AvatarDress;
+    [SerializeField] private Image AvatarMood;
+    private Cinde.Avatar CurrentAvatar;
 
     #endregion
     #region Unity Functions
@@ -21,9 +29,18 @@ public class ActivityOneController : MonoBehaviour
 
         ///Set current step as first
         Cinde.DataController.instance.NewActivity();
+        CurrentAvatar = Cinde.DataController.instance.GetUserAvatar();
+        LoadAvatar();
     }
     #endregion
     #region Activity Functions
+    public void LoadAvatar() {
+        AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
+        AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
+        AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);
+        AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
+        AvatarMood.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.MoodID);
+    }
     /// <summary>
     /// Save Movie Director
     /// </summary>
@@ -111,7 +128,6 @@ public class ActivityOneController : MonoBehaviour
         return int.Parse(indexStrg);
     }
     #endregion
-    
 }
 public enum Genres
 {

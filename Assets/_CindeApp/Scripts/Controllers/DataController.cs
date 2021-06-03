@@ -76,14 +76,14 @@ namespace Cinde {
         /// </summary>
         /// <returns></returns>
         public int GetUserHeadShape() {
-            return userData.user.Avatar.HeadShapeID;
+            return userData.user.Avatar.BodyShapeID;
         }
         /// <summary>
         /// Set headShape in current User
         /// </summary>
         /// <param name="headShape"></param>
         public void SetUserBody(int headShape) {
-            userData.user.Avatar.HeadShapeID = headShape;
+            userData.user.Avatar.BodyShapeID = headShape;
         }
         /// <summary>
         /// Get face from Current User
@@ -135,8 +135,28 @@ namespace Cinde {
         /// <param name="id"></param>
         /// <returns></returns>
         public Sprite GetBodyByID(int id) {
-            return (Sprite)userData.facesList.FacesList[id];
+            return (Sprite)userData.headsList.HeadShapesList[id];
         }
+        /// <summary>
+        /// Get a face from database By id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Sprite GetHairCutByID(int id) {
+            return (Sprite)userData.headsList.HairCut[id];
+        }
+        /// <summary>
+        /// Get a face from database By id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Sprite GetBackHairCutByID(int id) {
+            if (id > userData.headsList.BackHairCut.Count())
+                return null;
+            else
+                return (Sprite)userData.headsList.BackHairCut[id];
+        }
+
         /// <summary>
         /// Get a face from database By id
         /// </summary>
@@ -153,6 +173,15 @@ namespace Cinde {
         public Sprite GetFaceShapeById(int id) {
             return (Sprite)userData.headsList.HeadShapesList[id];
         }
+        /// <summary>
+        /// Get a head shape from database by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Sprite GetFaceById(int id) {
+            return (Sprite)userData.facesList.FacesList[id];
+        }
+
         #endregion
         #region Activity
         public void NewActivity() {
@@ -169,7 +198,7 @@ namespace Cinde {
         public void SaveMainActor(string character, int index) {
             if (character != "")
                 if (currentActivityOne.MainActors.Count >= index)
-                    currentActivityOne.MainActors[index-1] = character;
+                    currentActivityOne.MainActors[index - 1] = character;
                 else
                     currentActivityOne.MainActors.Add(character);
         }
