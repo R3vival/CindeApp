@@ -15,36 +15,53 @@ MonoBehaviour:
   user:
     userName: R3vival
     avatar:
-      HeadShape:
-        id: 0
-        setId: 0
-        partSprite: {fileID: 0}
-      Face:
-        id: 0
-        setId: 0
-        partSprite: {fileID: 0}
-        mood: 0
-      Dress:
-        id: 0
-        setId: 0
-        partSprite: {fileID: 0}
-      mood: 0
+      HeadShapeID: 2
+      HairCutID: 5
+      BackHairCutID: 99
+      FaceID: 2
+      DressID: 3
+      MoodID: 2
   headsList:
     HeadShapesList:
-    - id: 0
-      setId: 0
-      partSprite: {fileID: 0}
-    - id: 0
-      setId: 0
-      partSprite: {fileID: 0}
-    - id: 0
-      setId: 0
-      partSprite: {fileID: 0}
+    - {fileID: 21300000, guid: c6c5b08ca3cd39145a93c943f601c943, type: 3}
+    - {fileID: 21300000, guid: 27a74b8184c2d204cb78517b59cb2d65, type: 3}
+    - {fileID: 21300000, guid: 046fd47d002da8a409cb3b865ab19a74, type: 3}
+    - {fileID: 21300000, guid: d8cc2b70fb96cb94a82033765bfa1af9, type: 3}
+    - {fileID: 21300000, guid: 25629b9b65ec05541b6af124e8ca7733, type: 3}
+    HairCut:
+    - {fileID: 21300000, guid: 99f9855b88180b645bcd6ead1dca16ae, type: 3}
+    - {fileID: 21300000, guid: 4a33dbe48e839374f977e831c43440bc, type: 3}
+    - {fileID: 21300000, guid: 75829a964a40b8848934732825336c2b, type: 3}
+    - {fileID: 21300000, guid: b74da8679e216504da0ed5dc582ba53f, type: 3}
+    - {fileID: 21300000, guid: cc56065b37e744e4992d15a0d96b62af, type: 3}
+    - {fileID: 21300000, guid: d490baa5e9029c947926b478fe1ba270, type: 3}
+    - {fileID: 21300000, guid: bbf70fa6c6381f040a608a643bec4b96, type: 3}
+    - {fileID: 21300000, guid: 36a14b7a60e2319419ac20108c933f29, type: 3}
+    BackHairCut:
+    - {fileID: 21300000, guid: 6ba43556c9e0bb449a639d0017f3768b, type: 3}
+    - {fileID: 21300000, guid: 1eec64520490a944c8ee6bfdc3a1a809, type: 3}
+    - {fileID: 21300000, guid: 8e50e036249c20841b7a4b093d63aeec, type: 3}
   facesList:
     FacesList:
-    - id: 0
-      setId: 0
-      partSprite: {fileID: 0}
-      mood: 0
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 8ba703cd1d1c64141869c04189c19777, type: 3}
+    - {fileID: 21300000, guid: 514de214211dd094ba17ab8f3fa71317, type: 3}
+    - {fileID: 21300000, guid: 3a0cc1b4a72805a45be788a7cc801a45, type: 3}
+    - {fileID: 21300000, guid: 653585d3ff3057244abf13b7e154c510, type: 3}
+    - {fileID: 21300000, guid: e91e82e4e5829bd439a28b3e52484350, type: 3}
   dressesList:
-    DressList: []
+    DressList:
+    - {fileID: 21300000, guid: f22a021081c984642893a81b9df42f25, type: 3}
+    - {fileID: 21300000, guid: 9afa3be219dfc284c90fbafcdd8fa5df, type: 3}
+    - {fileID: 21300000, guid: 102929a912c6fd9469d85179571923fc, type: 3}
+    - {fileID: 21300000, guid: f61612e4c611dba4d84f3de5d220dc4f, type: 3}
+    - {fileID: 21300000, guid: 915f54e8a724b674f838c644341c3e7c, type: 3}
+    - {fileID: 21300000, guid: 94a114eb00e20974c94cc27a87f5b9b1, type: 3}
+  moodsList:
+    MoodsList:
+    - {fileID: 21300000, guid: 2d1f83f00c9ba024784e330b474dc5ab, type: 3}
+    - {fileID: 21300000, guid: e2749072ce0331347b8fd6b71660f658, type: 3}
+    - {fileID: 21300000, guid: 5d64d7538c3ee654194426127e8caa0e, type: 3}
+    - {fileID: 21300000, guid: 09cd5be21ef76814baab14f43adc5345, type: 3}
+    - {fileID: 21300000, guid: ebc08a15e81303f4da61ab1a0e1b2b75, type: 3}
+  activityOneList: []

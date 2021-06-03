@@ -18,7 +18,8 @@ public class posterGameObject : MonoBehaviour {
                                                 Year,
                                                 SoundBand,
                                                 Genre;
-    [SerializeField] private Image Character;
+    [SerializeField] private Transform characterTransform;
+    [SerializeField] private GameObject CharacterPrefab;
     [Space]
     [SerializeField] private Transform AwardContainer;
     [SerializeField] private GameObject AwardBase;
@@ -45,12 +46,11 @@ public class posterGameObject : MonoBehaviour {
         SoundBand.text = "Banda Sonora: " + movie.SoundBand;
 
         PosterBackground.sprite = BackgroundImages[0];
-        //PosterBackground.color = backgroundImageColors[movie.PosterBackground - 1];
+        PosterBackground.color = backgroundImageColors[movie.PosterBackground - 1];
 
-        //TODO SET AVATAR INTO CHARACTER 
-        //Character.sprite = CharactersImages[0];
-        //Character.color = characterImageColors[movie.MainCharacter-1];
-
+        GameObject temp = Instantiate(CharacterPrefab, characterTransform);
+        temp.transform.Find("fondo").gameObject.SetActive(false);
+        temp.transform.Find("emogi1").gameObject.SetActive(false);
 
         gameObject.SetActive(true);
     }

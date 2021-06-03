@@ -75,86 +75,83 @@ namespace Cinde {
         /// Get head shape from current User
         /// </summary>
         /// <returns></returns>
-        public AvatarComponent GetUserHeadShape() {
-            return userData.user.Avatar.HeadShape;
+        public int GetUserHeadShape() {
+            return userData.user.Avatar.HeadShapeID;
         }
         /// <summary>
         /// Set headShape in current User
         /// </summary>
         /// <param name="headShape"></param>
-        public void SetUserHeadShape(AvatarComponent headShape) {
-            userData.user.Avatar.HeadShape = headShape;
+        public void SetUserBody(int headShape) {
+            userData.user.Avatar.HeadShapeID = headShape;
         }
         /// <summary>
         /// Get face from Current User
         /// </summary>
         /// <returns></returns>
-        public AvatarComponent GetUserFace() {
-            return userData.user.Avatar.Face;
+        public int GetUserFace() {
+            return userData.user.Avatar.FaceID;
         }
         /// <summary>
         /// Set face in current User
         /// </summary>
         /// <param name="face"></param>
-        public void SetUserFace(FaceAvatarComponent face) {
-            userData.user.Avatar.Face = face;
-            userData.user.Avatar.mood = face.mood;
+        public void SetUserFace(int face) {
+            userData.user.Avatar.FaceID = face;
         }
-        public void SetAvatarMood(Moods mood) {
-            FaceAvatarComponent currentFace = userData.user.Avatar.Face;
+        /// <summary>
+        /// Set HairCut in current User
+        /// </summary>
+        /// <param name="face"></param>
+        public void SetUserHairCut(int face) {
+            userData.user.Avatar.HairCutID = face;
+        }
+        /// <summary>
+        /// Set BackHairCut in current User
+        /// </summary>
+        /// <param name="face"></param>
+        public void SetUserBackHairCut(int face) {
+            userData.user.Avatar.BackHairCutID = face;
+        }
+        /// <summary>
+        /// Set Dress in current User
+        /// </summary>
+        /// <param name="face"></param>
+        public void SetUserDress(int face) {
+            userData.user.Avatar.DressID = face;
+        }
+        /// <summary>
+        /// Set Mood in current User
+        /// </summary>
+        /// <param name="face"></param>
+        public void SetUserMood(int face) {
+            userData.user.Avatar.MoodID = face;
+        }
 
-            FaceAvatarComponent tempFace = (FaceAvatarComponent)GetFaceSetById(currentFace.setId).Where(x => x.mood == mood);
-            userData.user.Avatar.Face = tempFace;
-            userData.user.Avatar.mood = tempFace.mood;
-        }
         #region Db
         /// <summary>
         /// Get a face from database By id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public FaceAvatarComponent GetFaceByID(int id) {
-            return (FaceAvatarComponent)userData.facesList.FacesList.Where(x => x.id == id);
-        }
-        /// <summary>
-        /// Get all faces of a set by id
-        /// </summary>
-        /// <param name="setId"></param>
-        /// <returns></returns>
-        public FaceAvatarComponent[] GetFaceSetById(int setId) {
-            return (FaceAvatarComponent[])userData.facesList.FacesList.Where(x => x.setId == setId);
+        public Sprite GetBodyByID(int id) {
+            return (Sprite)userData.facesList.FacesList[id];
         }
         /// <summary>
         /// Get a face from database By id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public AvatarComponent GetDressById(int id) {
-            return (AvatarComponent)userData.dressesList.DressList.Where(x => x.id == id);
-        }
-        /// <summary>
-        /// Get all dresses of a set by id
-        /// </summary>
-        /// <param name="setId"></param>
-        /// <returns></returns>
-        public AvatarComponent[] GetDressSetById(int setId) {
-            return (AvatarComponent[])userData.dressesList.DressList.Where(x => x.setId == setId);
+        public Sprite GetDressById(int id) {
+            return (Sprite)userData.dressesList.DressList[id];
         }
         /// <summary>
         /// Get a head shape from database by id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public AvatarComponent GetFaceShapeById(int id) {
-            return (AvatarComponent)userData.headsList.HeadShapesList.Where(x => x.id == id);
-        }
-        /// <summary>
-        /// Get all face shapes of a set by id
-        /// </summary>
-        /// <param name="setId"></param>
-        /// <returns></returns>
-        public AvatarComponent[] GetFaceShapeSetsById(int setId) {
-            return (AvatarComponent[])userData.headsList.HeadShapesList.Where(x => x.setId == setId);
+        public Sprite GetFaceShapeById(int id) {
+            return (Sprite)userData.headsList.HeadShapesList[id];
         }
         #endregion
         #region Activity

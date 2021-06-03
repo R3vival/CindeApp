@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class ChangehairColor : MonoBehaviour
 {
     [Header("Sprite To Change")]
-    public SpriteRenderer bodyPart;
-    public SpriteRenderer backhairPart;
+    public Image bodyPart;
+    public Image backhairPart;
 
     [Header("Sprites To Cycle Through")]
 

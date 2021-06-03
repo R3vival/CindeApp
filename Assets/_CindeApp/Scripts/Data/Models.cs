@@ -16,37 +16,30 @@ namespace Cinde {
     }
     [Serializable]
     public class Avatar {
-        public AvatarComponent HeadShape;
-        public FaceAvatarComponent Face;
-        public AvatarComponent Dress;
-        public Moods mood;
+        public int HeadShapeID;
+        public int HairCutID;
+        public int BackHairCutID;
+        public int FaceID;
+        public int DressID;
+        public int MoodID;
     }
     [Serializable]
     public class HeadShapes {
-        public AvatarComponent[] HeadShapesList;
+        public Sprite[] HeadShapesList;
+        public Sprite[] HairCut;
+        public Sprite[] BackHairCut;
     }
     [Serializable]
     public class Faces {
-        public FaceAvatarComponent[] FacesList;
+        public Sprite[] FacesList;
     }
     [Serializable]
     public class Dresses {
-        public AvatarComponent[] DressList;
-
-    }
-
-    [Serializable]
-    public class AvatarComponent {
-        public int id;
-        public int setId;
-        [SerializeField] private Sprite partSprite;
-
-        public Sprite PartSprite { get => partSprite; set => partSprite = value; }
+        public Sprite[] DressList;
     }
     [Serializable]
-    public class FaceAvatarComponent : AvatarComponent
-    {
-        public Moods mood;
+    public class Moods {
+        public Sprite[] MoodsList;
     }
     [Serializable]
     public class ActivityOne {
@@ -64,11 +57,5 @@ namespace Cinde {
             MainActors = new List<string>();
             Award = new List<int>();
         }
-    }
-    public enum Moods {
-        Happy,
-        Sad,
-        Angry,
-        Idle
     }
 }

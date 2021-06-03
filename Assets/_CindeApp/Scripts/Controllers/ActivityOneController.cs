@@ -75,7 +75,7 @@ public class ActivityOneController : MonoBehaviour
         Cinde.DataController.instance.SaveMoviePosterBackground(index);
     }
     public void SavePosterAward(GameObject Award) {
-        if (!Cinde.DataController.instance.SaveMovieAward(GetIndex(Award.name)))
+        if (Cinde.DataController.instance.SaveMovieAward(GetIndex(Award.name)-1))
             Award.SetActive(true);
         else
             Award.SetActive(false);

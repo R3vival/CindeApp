@@ -11,6 +11,7 @@ namespace Cinde {
         public HeadShapes headsList;
         public Faces facesList;
         public Dresses dressesList;
+        public Moods moodsList;
         [Header("Activity One DB")]
         public List<ActivityOne> activityOneList;
     }
