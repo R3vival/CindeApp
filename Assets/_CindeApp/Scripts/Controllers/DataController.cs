@@ -11,7 +11,7 @@ namespace Cinde {
         #endregion
 
         #region UnityRegion
-        private void Start() {
+        private void Awake() {
             if (instance)
                 Destroy(this.gameObject);
             else
@@ -71,6 +71,17 @@ namespace Cinde {
         public void SetUserAvatar(Avatar avatar) {
             userData.user.Avatar = avatar;
         }
+        /// <summary>
+        /// Set Avatar to Current User
+        /// </summary>
+        /// <param name="avatar"></param>
+        public bool UserHasAvatar() {
+            if (userData.user.Avatar != null)
+                return true;
+            else
+                return false;
+        }
+
         /// <summary>
         /// Get head shape from current User
         /// </summary>
@@ -157,7 +168,7 @@ namespace Cinde {
                 return (Sprite)userData.headsList.BackHairCut[id];
         }
 
-        /// <summary>
+        /// <summary>   
         /// Get a face from database By id
         /// </summary>
         /// <param name="id"></param>
@@ -180,6 +191,14 @@ namespace Cinde {
         /// <returns></returns>
         public Sprite GetFaceById(int id) {
             return (Sprite)userData.facesList.FacesList[id];
+        }
+        /// <summary>
+        /// Get a head shape from database by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Sprite GetMoodById(int id) {
+            return (Sprite)userData.moodsList.MoodsList[id];
         }
 
         #endregion

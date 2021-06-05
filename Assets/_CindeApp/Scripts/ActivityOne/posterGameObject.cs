@@ -10,7 +10,8 @@ public class posterGameObject : MonoBehaviour {
     [Header("Poster Components")]
     [SerializeField] private Image PosterBackground;
 
-    [SerializeField] private TextMeshProUGUI    MovieDirector,
+    [SerializeField]
+    private TextMeshProUGUI    MovieDirector,
                                                 MovieName,
                                                 MovieActor_1,
                                                 MovieActor_2,
@@ -26,16 +27,15 @@ public class posterGameObject : MonoBehaviour {
 
     [Header("Poster Assets")]
     public List<Sprite> BackgroundImages;
-    public List<Color> backgroundImageColors;
     #endregion
     #region Poster GameObject Functions
     public void DrawPoster(Cinde.ActivityOne movie) {
         MovieDirector.text = movie.Director;
         MovieName.text = movie.MovieName;
-        
-        if(movie.MainActors.Count > 0) {
+
+        if (movie.MainActors.Count > 0) {
             MovieActor_1.text = movie.MainActors[0];
-            if(movie.MainActors.Count >= 2) {
+            if (movie.MainActors.Count >= 2) {
                 MovieActor_2.text = movie.MainActors.Count == 2 ? "•" : movie.MainActors[1];
                 MovieActor_3.text = movie.MainActors.Count == 2 ? movie.MainActors[1] : movie.MainActors[2];
             }
@@ -44,13 +44,11 @@ public class posterGameObject : MonoBehaviour {
         Year.text = "Año: " + movie.Year;
         Genre.text = "Genero: " + movie.Genre;
         SoundBand.text = "Banda Sonora: " + movie.SoundBand;
-
-        PosterBackground.sprite = BackgroundImages[0];
-        PosterBackground.color = backgroundImageColors[movie.PosterBackground - 1];
-
-        GameObject temp = Instantiate(CharacterPrefab, characterTransform);
-        temp.transform.Find("fondo").gameObject.SetActive(false);
-        temp.transform.Find("emogi1").gameObject.SetActive(false);
+        
+        if (movie.PosterBackground == 0)
+            PosterBackground.sprite = BackgroundImages[movie.PosterBackground];
+        else
+            PosterBackground.sprite = BackgroundImages[movie.PosterBackground - 1];
 
         gameObject.SetActive(true);
     }

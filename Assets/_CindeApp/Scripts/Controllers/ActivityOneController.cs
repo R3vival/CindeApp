@@ -5,11 +5,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ActivityOneController : MonoBehaviour
-{
+public class ActivityOneController : MonoBehaviour {
     #region Declarations
     [SerializeField] private GameObject activityPanel;
-    [Header("Assets")]    
+    [Header("Assets")]
     [SerializeField] private posterGameObject poster;
     [SerializeField] private GameObject body;
     [SerializeField] private GameObject backBtn;
@@ -52,8 +51,7 @@ public class ActivityOneController : MonoBehaviour
     /// Save Movie Name
     /// </summary>
     /// <param name="nameInputField"></param>
-    public void SaveMovieName(TMP_InputField nameInputField)
-    {
+    public void SaveMovieName(TMP_InputField nameInputField) {
         Cinde.DataController.instance.SaveMovieName(nameInputField.text);
     }
     /// <summary>
@@ -64,9 +62,9 @@ public class ActivityOneController : MonoBehaviour
 
         Cinde.DataController.instance.SaveMainActor(actorsInputField.text, GetIndex(actorsInputField.name));
     }/// <summary>
-    /// Save Movie Genre
-    /// </summary>
-    /// <param name="genreDropDown"></param>
+     /// Save Movie Genre
+     /// </summary>
+     /// <param name="genreDropDown"></param>
     public void SaveMovieGenre(TMP_Dropdown genreDropDown) {
         Cinde.DataController.instance.SaveMovieGenre(genreDropDown.options[genreDropDown.value].text);
     }
@@ -92,7 +90,7 @@ public class ActivityOneController : MonoBehaviour
         Cinde.DataController.instance.SaveMoviePosterBackground(index);
     }
     public void SavePosterAward(GameObject Award) {
-        if (Cinde.DataController.instance.SaveMovieAward(GetIndex(Award.name)-1))
+        if (Cinde.DataController.instance.SaveMovieAward(GetIndex(Award.name) - 1))
             Award.SetActive(true);
         else
             Award.SetActive(false);
@@ -108,18 +106,17 @@ public class ActivityOneController : MonoBehaviour
     /// Show Poster
     /// </summary>
     public void ShowPoster() {
-        backBtn.SetActive(true);
         poster.DrawPoster(Cinde.DataController.instance.getcurrentActivity());
     }
     public void BackPoster() {
-        backBtn.SetActive(false);
-        poster.gameObject.SetActive(true);
+        poster.gameObject.SetActive(false);
     }
     /// <summary>
     /// Save movie To DB
     /// </summary>
     public void SaveActivity() {
-            Cinde.DataController.instance.SaveActivity();
+        Cinde.DataController.instance.SaveActivity();
+        transform.GetComponent<SceneManagment>().LoadMainMenu();
     }
     private int GetIndex(string text) {
         ///Sprint GameObject name to get actor index
@@ -129,8 +126,7 @@ public class ActivityOneController : MonoBehaviour
     }
     #endregion
 }
-public enum Genres
-{
+public enum Genres {
     Accion,
     Terror,
     Suspenso,

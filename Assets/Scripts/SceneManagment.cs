@@ -40,6 +40,9 @@ public class SceneManagment : MonoBehaviour
     public void LoadActivityFour() {
         SceneManager.LoadScene(Scenes.ActivityFour);
     }
+    public void CloseApp() {
+        Application.Quit();
+    }
 
 }
 public class Scenes {

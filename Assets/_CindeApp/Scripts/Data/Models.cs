@@ -49,7 +49,7 @@ namespace Cinde {
         public string Genre;
         public int Year;
         public string SoundBand;
-        public int PosterBackground;
+        public int PosterBackground = 0;
         public List<int> Award;
         public string Reflex;
 

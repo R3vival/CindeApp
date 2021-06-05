@@ -505,6 +505,60 @@ Transform:
   m_Father: {fileID: 1005910305}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &652646395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652646397}
+  - component: {fileID: 652646396}
+  m_Layer: 0
+  m_Name: Datacontroller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &652646396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652646395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b97415387d36ff4e88c570e44e87527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userData: {fileID: 11400000, guid: ea9adf60a50ebc14cb4723f1289de0ce, type: 2}
+  currentActivityOne:
+    Director: 
+    MovieName: 
+    MainActors: []
+    Genre: 
+    Year: 0
+    SoundBand: 
+    PosterBackground: 0
+    Award: 
+    Reflex: 
+--- !u!4 &652646397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652646395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.045707524, y: 0.48657763, z: -0.14122531}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655388567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,6 +2707,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108274874}
   m_CullTransparentMesh: 0
+--- !u!1 &2121164216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121164218}
+  - component: {fileID: 2121164217}
+  m_Layer: 0
+  m_Name: AvatarCreationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2121164217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121164216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be56a42cb0d8c554cabf34d8698af1ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvatarBody: {fileID: 1460124785}
+  AvatarHaircut: {fileID: 81807093}
+  AvatarBackHaircut: {fileID: 6304756}
+  AvatarDress: {fileID: 963201190}
+  AvatarFace: {fileID: 1167721213}
+  AvatarMood: {fileID: 1637097192}
+--- !u!4 &2121164218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121164216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 100, y: 27.211166, z: 200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2123410667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,26 +3167,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1517266396}
     m_Modifications:
-    - target: {fileID: 2492822125012467237, guid: b362fabb061d45a4390a6ee714d83300,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492822125012467237, guid: b362fabb061d45a4390a6ee714d83300,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492822125071190818, guid: b362fabb061d45a4390a6ee714d83300,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492822125071190818, guid: b362fabb061d45a4390a6ee714d83300,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 45.000004
-      objectReference: {fileID: 0}
     - target: {fileID: 2492822125133334496, guid: b362fabb061d45a4390a6ee714d83300,
         type: 3}
       propertyPath: m_Name
