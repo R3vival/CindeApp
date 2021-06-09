@@ -50,12 +50,12 @@ namespace Cinde {
         public int Year;
         public string SoundBand;
         public int PosterBackground = 0;
-        public List<int> Award;
+        public List<int> Awards;
         public string Reflex;
 
         public ActivityOne() {
             MainActors = new List<string>();
-            Award = new List<int>();
+            Awards = new List<int>();
         }
     }
 }

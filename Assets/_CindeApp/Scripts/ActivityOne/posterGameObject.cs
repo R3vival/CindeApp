@@ -56,9 +56,9 @@ public class posterGameObject : MonoBehaviour {
         else
             PosterBackground.sprite = BackgroundImages[movie.PosterBackground - 1];
 
-        if (movie.Award.Count > 0) {
+        if (movie.Awards.Count > 0) {
             Image awardImage;
-            foreach (int award in movie.Award) {
+            foreach (int award in movie.Awards) {
                 awardImage = Instantiate(AwardBase, AwardContainer).GetComponent<Image>();
                 awardImage.sprite = AwardImageList[award];
                 awardImage.gameObject.SetActive(true);

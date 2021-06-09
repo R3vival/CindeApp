@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+///By R3-Santiago
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
     #region Declarations
-    [Header("Avatar Assets")]
+    [Header("Avatar Assets")]    
     [SerializeField] private Image AvatarBody;
     [SerializeField] private Image AvatarHaircut;
     [SerializeField] private Image AvatarBackHaircut;
@@ -31,6 +30,5 @@ public class MainMenuController : MonoBehaviour
         AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
         AvatarFace.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.FaceID);
         AvatarMood.sprite = Cinde.DataController.instance.GetMoodById(CurrentAvatar.MoodID);
-
     }
 }

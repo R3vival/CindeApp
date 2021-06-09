@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: User
   m_EditorClassIdentifier: 
   user:
-    userName: R3vival
+    userName: 
     avatar:
-      HeadShapeID: 2
-      HairCutID: 5
+      BodyShapeID: 4
+      HairCutID: 3
       BackHairCutID: 99
-      FaceID: 2
-      DressID: 3
+      FaceID: 3
+      DressID: 2
       MoodID: 2
   headsList:
     HeadShapesList:
@@ -30,20 +30,19 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 25629b9b65ec05541b6af124e8ca7733, type: 3}
     HairCut:
     - {fileID: 21300000, guid: 99f9855b88180b645bcd6ead1dca16ae, type: 3}
-    - {fileID: 21300000, guid: 4a33dbe48e839374f977e831c43440bc, type: 3}
-    - {fileID: 21300000, guid: 75829a964a40b8848934732825336c2b, type: 3}
+    - {fileID: 21300000, guid: 36a14b7a60e2319419ac20108c933f29, type: 3}
+    - {fileID: 21300000, guid: d490baa5e9029c947926b478fe1ba270, type: 3}
     - {fileID: 21300000, guid: b74da8679e216504da0ed5dc582ba53f, type: 3}
     - {fileID: 21300000, guid: cc56065b37e744e4992d15a0d96b62af, type: 3}
-    - {fileID: 21300000, guid: d490baa5e9029c947926b478fe1ba270, type: 3}
+    - {fileID: 21300000, guid: 75829a964a40b8848934732825336c2b, type: 3}
     - {fileID: 21300000, guid: bbf70fa6c6381f040a608a643bec4b96, type: 3}
-    - {fileID: 21300000, guid: 36a14b7a60e2319419ac20108c933f29, type: 3}
+    - {fileID: 21300000, guid: 4a33dbe48e839374f977e831c43440bc, type: 3}
     BackHairCut:
     - {fileID: 21300000, guid: 6ba43556c9e0bb449a639d0017f3768b, type: 3}
     - {fileID: 21300000, guid: 1eec64520490a944c8ee6bfdc3a1a809, type: 3}
     - {fileID: 21300000, guid: 8e50e036249c20841b7a4b093d63aeec, type: 3}
   facesList:
     FacesList:
-    - {fileID: 0}
     - {fileID: 21300000, guid: 8ba703cd1d1c64141869c04189c19777, type: 3}
     - {fileID: 21300000, guid: 514de214211dd094ba17ab8f3fa71317, type: 3}
     - {fileID: 21300000, guid: 3a0cc1b4a72805a45be788a7cc801a45, type: 3}

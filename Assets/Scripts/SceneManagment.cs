@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿///By R3-Santiago
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

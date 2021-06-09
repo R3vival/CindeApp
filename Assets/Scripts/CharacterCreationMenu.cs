@@ -14,7 +14,7 @@ public class CharacterCreationMenu : MonoBehaviour
 
     public void Submit()
     {
-        //Cinde.DataController.instance.SetUserAvatar(userAvatar);
+        Cinde.DataController.instance.SaveUserInfo();
         SceneManager.LoadScene(Scenes.MainScene);
     }
 }

@@ -12,14 +12,12 @@ namespace Cinde {
 
         #region UnityRegion
         private void Awake() {
-            if (instance)
-                Destroy(this.gameObject);
-            else
+            if (instance == null) {
+                DontDestroyOnLoad(gameObject);
                 instance = this;
-
-            LoadUserInfo();
-
-            DontDestroyOnLoad(gameObject);
+                LoadUserInfo();
+            } else if (instance != this)
+                Destroy(gameObject);
         }
         private void OnApplicationQuit() {
             SaveUserInfo();
@@ -272,10 +270,10 @@ namespace Cinde {
             currentActivityOne.PosterBackground = index;
         }
         public bool SaveMovieAward(int index) {
-            if (currentActivityOne.Award.Contains(index))
+            if (currentActivityOne.Awards.Contains(index))
                 return false;
             else {
-                currentActivityOne.Award.Add(index);
+                currentActivityOne.Awards.Add(index);
                 return true;
             }
         }

@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+///By R3-Santiago
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +6,7 @@ public class AvatarCreationController : MonoBehaviour
 {
     #region Declarations
     [Header("Avatar Assets")]
+    [SerializeField] private InputField UserName;
     [SerializeField] private Image AvatarBody;
     [SerializeField] private Image AvatarHaircut;
     [SerializeField] private Image AvatarBackHaircut;
@@ -30,6 +30,9 @@ public class AvatarCreationController : MonoBehaviour
         AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
         AvatarFace.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.FaceID);
         AvatarMood.sprite = Cinde.DataController.instance.GetMoodById(CurrentAvatar.MoodID);
-
+        UserName.text = Cinde.DataController.instance.GetUserName();
+    }
+    public void SetUserName(InputField name) {
+        Cinde.DataController.instance.SetUserName(name.text);
     }
 }

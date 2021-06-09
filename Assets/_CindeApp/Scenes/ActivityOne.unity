@@ -1178,7 +1178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &166679202
 MonoBehaviour:
@@ -1196,6 +1196,17 @@ MonoBehaviour:
   poster: {fileID: 424115585}
   body: {fileID: 166621088}
   backBtn: {fileID: 1306523542}
+  directorInputField: {fileID: 427752512}
+  nameInputField: {fileID: 1292462784}
+  actorsInputField_1: {fileID: 1361151719}
+  actorsInputField_2: {fileID: 1720012897}
+  actorsInputField_3: {fileID: 1203199361}
+  genreDropDown: {fileID: 1080083016}
+  yearInputField: {fileID: 1949051192}
+  bandInputField: {fileID: 1220984769}
+  reflexInputField: {fileID: 1334892474}
+  posterBackgroundParent: {fileID: 1311972215}
+  awardsParent: {fileID: 58368414}
   AvatarBody: {fileID: 1946115944}
   AvatarHaircut: {fileID: 1946115943}
   AvatarBackHaircut: {fileID: 1946115942}
@@ -2950,7 +2961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382911013
 GameObject:
@@ -3363,6 +3374,60 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!1 &413508343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413508345}
+  - component: {fileID: 413508344}
+  m_Layer: 0
+  m_Name: Datacontroller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &413508344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413508343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b97415387d36ff4e88c570e44e87527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userData: {fileID: 11400000, guid: ea9adf60a50ebc14cb4723f1289de0ce, type: 2}
+  currentActivityOne:
+    Director: 
+    MovieName: 
+    MainActors: []
+    Genre: 
+    Year: 0
+    SoundBand: 
+    PosterBackground: 0
+    Awards: 
+    Reflex: 
+--- !u!4 &413508345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413508343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.045707524, y: 0.48657763, z: -0.14122531}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &424115583
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,10 +3646,10 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieDirector
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 427752512}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6898,7 +6963,7 @@ RectTransform:
   - {fileID: 1003742815}
   - {fileID: 1459426346}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8203,7 +8268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003742814
 GameObject:
@@ -9115,10 +9180,10 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieGenre
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1080083016}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10219,11 +10284,11 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieMainActors
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1203199361}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10315,7 +10380,7 @@ GameObject:
   - component: {fileID: 1220984770}
   - component: {fileID: 1220984769}
   m_Layer: 5
-  m_Name: NameInputField
+  m_Name: BandInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10406,10 +10471,10 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieBand
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1220984769}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11035,10 +11100,10 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieName
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1292462784}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11923,11 +11988,11 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieMainActors
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1361151719}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13997,11 +14062,11 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieMainActors
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1720012897}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16472,10 +16537,10 @@ MonoBehaviour:
       - m_Target: {fileID: 166679202}
         m_TargetAssemblyTypeName: ActivityOneController, Assembly-CSharp
         m_MethodName: SaveMovieYear
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1949051192}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
