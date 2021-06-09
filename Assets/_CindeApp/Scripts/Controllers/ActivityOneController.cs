@@ -27,8 +27,12 @@ public class ActivityOneController : MonoBehaviour {
         activityPanel.SetActive(true);
 
         ///Set current step as first
-        Cinde.DataController.instance.NewActivity();
-        CurrentAvatar = Cinde.DataController.instance.GetUserAvatar();
+        if (Cinde.DataController.instance.GetCurrentActivityOne() == null)
+            Cinde.DataController.instance.NewActivity(Cinde.DataType.ActivityOne);
+        else
+
+            CurrentAvatar = Cinde.DataController.instance.GetUserAvatar();
+
         LoadAvatar();
     }
     #endregion
@@ -61,10 +65,11 @@ public class ActivityOneController : MonoBehaviour {
     public void SaveMovieMainActors(TMP_InputField actorsInputField) {
 
         Cinde.DataController.instance.SaveMainActor(actorsInputField.text, GetIndex(actorsInputField.name));
-    }/// <summary>
-     /// Save Movie Genre
-     /// </summary>
-     /// <param name="genreDropDown"></param>
+    }
+    /// <summary>
+    /// Save Movie Genre
+    /// </summary>
+    /// <param name="genreDropDown"></param>
     public void SaveMovieGenre(TMP_Dropdown genreDropDown) {
         Cinde.DataController.instance.SaveMovieGenre(genreDropDown.options[genreDropDown.value].text);
     }
@@ -106,7 +111,7 @@ public class ActivityOneController : MonoBehaviour {
     /// Show Poster
     /// </summary>
     public void ShowPoster() {
-        poster.DrawPoster(Cinde.DataController.instance.getcurrentActivity());
+        poster.DrawPoster(Cinde.DataController.instance.GetCurrentActivityOne());
     }
     public void BackPoster() {
         poster.gameObject.SetActive(false);

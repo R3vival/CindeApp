@@ -27,6 +27,12 @@ public class posterGameObject : MonoBehaviour {
 
     [Header("Poster Assets")]
     public List<Sprite> BackgroundImages;
+    public List<Sprite> AwardImageList;
+    #endregion
+    #region Unity Functions
+    private void Start() {
+        AwardBase.SetActive(false);
+    }
     #endregion
     #region Poster GameObject Functions
     public void DrawPoster(Cinde.ActivityOne movie) {
@@ -50,6 +56,15 @@ public class posterGameObject : MonoBehaviour {
         else
             PosterBackground.sprite = BackgroundImages[movie.PosterBackground - 1];
 
+        if (movie.Award.Count > 0) {
+            Image awardImage;
+            foreach (int award in movie.Award) {
+                awardImage = Instantiate(AwardBase, AwardContainer).GetComponent<Image>();
+                awardImage.sprite = AwardImageList[award];
+                awardImage.gameObject.SetActive(true);
+            }
+        }
+            
         gameObject.SetActive(true);
     }
     #endregion

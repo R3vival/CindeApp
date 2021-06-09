@@ -8,9 +8,9 @@ namespace Cinde {
         /// <summary>
         /// Read Json At Android path to Get User info
         /// </summary>
-        public void UserFromJson() {
+        public static void UserFromJson() {
             string userString;
-            string jsonPath = DataPath();
+            string jsonPath = DataPath(DataType.User);
             CheckFileExistance(jsonPath, true);
 
             userString = File.ReadAllText(jsonPath);
@@ -21,24 +21,38 @@ namespace Cinde {
         /// Get user at DataController and Save it on a Json
         /// </summary>
         /// <param name="user"></param>
-        public static void UserToJson(User user) {
+        public static void UserToJson() {
             string userString;
-            string jsonPath = DataPath();
+            string jsonPath = DataPath(DataType.User);
 
             CheckFileExistance(jsonPath);
 
-            userString = JsonUtility.ToJson(user);
+            userString = JsonUtility.ToJson(DataController.instance.GetUser());
             File.WriteAllText(jsonPath, userString);
+        }
+        public static void ActivityOneToJson(DataType type) {
+            string activityString;
+            string jsonPath = DataPath(type);
+
+            CheckFileExistance(jsonPath);
+
+            activityString = JsonUtility.ToJson(DataController.instance.GetCurrentActivityOne());
+            File.WriteAllText(jsonPath, activityString);
         }
         /// <summary>
         /// Get Path of UserData File
         /// </summary>
         /// <returns></returns>
-        private static string DataPath() {
+        private static string DataPath(DataType type) {
             if (Directory.Exists(Application.persistentDataPath))
-                return Path.Combine(Application.persistentDataPath, "UserData.json");
-            return Path.Combine(Application.streamingAssetsPath, "UserData.json");
+                return Path.Combine(Application.persistentDataPath, type+"Data.json");
+            return Path.Combine(Application.streamingAssetsPath, type+"UserData.json");
         }
+        /// <summary>
+        /// Check File Existance
+        /// </summary>
+        /// <param name="filePath">Path of tile to check</param>
+        /// <param name="isReading"></param>
         private static void CheckFileExistance(string filePath, bool isReading = false) {
             if (!File.Exists(filePath)) {
                 File.Create(filePath).Close();
@@ -49,7 +63,13 @@ namespace Cinde {
                 }
             }
         }
-        
-        
+    }
+    public enum DataType {
+        User,
+        ActivityOne,
+        ActivityTwo,
+        ActivityThree,
+        ActivityFour,
+        ActivityFive,        
     }
 }

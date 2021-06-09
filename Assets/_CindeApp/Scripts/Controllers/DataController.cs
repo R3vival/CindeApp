@@ -17,9 +17,20 @@ namespace Cinde {
             else
                 instance = this;
 
+            LoadUserInfo();
+
             DontDestroyOnLoad(gameObject);
         }
+        private void OnApplicationQuit() {
+            SaveUserInfo();
+        }
         #endregion
+        /// <summary>
+        /// User Constructor
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="avatar"></param>
+        /// <returns></returns>
         public User CreateUser(string name, Avatar avatar) {
             User newUser = new User();
 
@@ -28,7 +39,18 @@ namespace Cinde {
 
             return newUser;
         }
-
+        /// <summary>
+        /// Save user info as Json
+        /// </summary>
+        public void SaveUserInfo(){
+            JsonDeserializer.UserToJson();
+        }
+        /// <summary>
+        /// load user info as Json
+        /// </summary>
+        public void LoadUserInfo() {
+            JsonDeserializer.UserFromJson();
+        }
         /// <summary>
         /// Get the User from scriptableObject
         /// </summary>
@@ -203,8 +225,24 @@ namespace Cinde {
 
         #endregion
         #region Activity
-        public void NewActivity() {
-            currentActivityOne = new ActivityOne();
+        /// <summary>
+        /// 
+        /// </summary>
+        public void NewActivity(DataType type) {
+            switch (type) {
+                case DataType.ActivityOne:
+                    currentActivityOne = new ActivityOne();
+                    break;
+                case DataType.ActivityTwo:
+                    break;
+                case DataType.ActivityThree:
+                    break;
+                case DataType.ActivityFour:
+                    break;
+                case DataType.ActivityFive:
+                    break;
+            }
+            
         }
         #endregion
         #region Activity One
@@ -244,7 +282,7 @@ namespace Cinde {
         public void SaveMovieReflex(string reflex) {
             currentActivityOne.Reflex = reflex;
         }
-        public ActivityOne getcurrentActivity() {
+        public ActivityOne GetCurrentActivityOne() {
             return currentActivityOne;
         }
         public void SaveActivity() {
