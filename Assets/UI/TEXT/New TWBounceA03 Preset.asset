@@ -18,14 +18,14 @@ MonoBehaviour:
   pingpongLoop: 0
   continuousLoop: 0
   sortType: 0
-  interval: 0.3
-  singleTime: 1
+  interval: 0.2
+  singleTime: 0.5
   scale: {x: 0, y: 0}
   anchorType: 4
   anchorOffset: {x: 0, y: 0}
   bounces: 2
   bounciness: 0.5
-  easingType: 0
+  easingType: 14
   fadeRange:
     start: 0
     end: 0.2
