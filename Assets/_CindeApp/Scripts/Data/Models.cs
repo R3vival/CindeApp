@@ -22,6 +22,8 @@ namespace Cinde {
         public int FaceID;
         public int DressID;
         public int MoodID;
+
+        [HideInInspector] public bool FirstSetup = false;
     }
     [Serializable]
     public class HeadShapes {

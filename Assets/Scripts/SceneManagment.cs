@@ -2,15 +2,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManagment : MonoBehaviour
-{
+public class SceneManagment : MonoBehaviour {
     public void LoadMainMenu() {
         SceneManager.LoadScene(Scenes.MainScene);
     }
-    public void LoadEditCharacter()
-    {
-        ///Never Use int value to load Scenes
-        SceneManager.LoadScene(Scenes.CreateAvatar);
+    public void LoadEditCharacter() {
+        if (!Cinde.DataController.instance.GetUserAvatar().FirstSetup)
+            ///Never Use int value to load Scenes
+            SceneManager.LoadScene(Scenes.CreateAvatar);
+        else
+            SceneManager.LoadScene(Scenes.MainScene);
     }
     public void LoadActivityOne() {
         SceneManager.LoadScene(Scenes.ActivityOne);
@@ -20,7 +21,8 @@ public class SceneManagment : MonoBehaviour
     }
     public void LoadActivityThree() {
         SceneManager.LoadScene(Scenes.ActivityThree);
-    }public void LoadActivityThreePartOne() {
+    }
+    public void LoadActivityThreePartOne() {
         SceneManager.LoadScene(Scenes.ActivityThreePartOne);
     }
     public void LoadActivityThreePartTwo() {
