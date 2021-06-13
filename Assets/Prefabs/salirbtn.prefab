@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2602351329523672612}
   - component: {fileID: 2602351329523672615}
   m_Layer: 0
-  m_Name: SalirBtn
+  m_Name: Salirbtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410, y: 1080}
+  m_AnchoredPosition: {x: 490, y: 1080}
   m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2602351329523672613
