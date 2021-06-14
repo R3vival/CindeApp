@@ -7,15 +7,23 @@ using UnityEngine.SceneManagement;
 public class CharacterCreationMenu : MonoBehaviour
 {
     public GameObject character;
-
     public List<EditCharacter> editCharacters = new List<EditCharacter>();
     public List<cabellochange> cabellochanges = new List<cabellochange>();
     public List<Coor> coors = new List<Coor>();
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     public void Submit()
     {
-        Cinde.DataController.instance.SaveUserInfo();
-        Cinde.DataController.instance.GetUserAvatar().FirstSetup = true;
-        SceneManager.LoadScene(Scenes.MainScene);
+        PrefabUtility.SaveAsPrefabAsset(character, "Assets/Character.prefab");
+        SceneManager.LoadScene(1);
     }
 }

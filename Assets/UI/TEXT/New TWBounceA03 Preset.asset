@@ -25,7 +25,7 @@ MonoBehaviour:
   anchorOffset: {x: 0, y: 0}
   bounces: 2
   bounciness: 0.5
-  easingType: 14
+  easingType: 13
   fadeRange:
     start: 0
     end: 0.2

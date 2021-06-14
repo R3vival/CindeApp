@@ -30,27 +30,27 @@ namespace AnimatextFree.Examples
             paramGroup.refreshMode = RefreshMode.Start;
             AddAnimatextComponent(textA, new Effect(preset, paramGroup), out animatextA);
             animatextA.PlayEffect(0);
-            animatextA.RefreshEffect(0);
+            animatextA.Refresh(false);
 
             paramGroup.refreshMode = RefreshMode.Play;
             AddAnimatextComponent(textB, new Effect(preset, paramGroup), out animatextB);
             animatextB.PlayEffect(0);
-            animatextB.RefreshEffect(0);
+            animatextB.Refresh(false);
 
             paramGroup.refreshMode = RefreshMode.Pause;
             AddAnimatextComponent(textC, new Effect(preset, paramGroup), out animatextC);
             animatextC.PlayEffect(0);
-            animatextC.RefreshEffect(0);
+            animatextC.Refresh(false);
 
             paramGroup.refreshMode = RefreshMode.Continue;
             AddAnimatextComponent(textD, new Effect(preset, paramGroup), out animatextD);
             animatextD.PlayEffect(0);
-            animatextD.RefreshEffect(0);
+            animatextD.Refresh(false);
 
             paramGroup.refreshMode = RefreshMode.End;
             AddAnimatextComponent(textE, new Effect(preset, paramGroup), out animatextE);
             animatextE.PlayEffect(0);
-            animatextE.RefreshEffect(0);
+            animatextE.Refresh(false);
         }
     }
 }

@@ -37,10 +37,19 @@ public class SceneManagment : MonoBehaviour {
     public void LoadActivityThreePartFive() {
         SceneManager.LoadScene(Scenes.ActivityThreePartFive);
     }
-
     public void LoadActivityFour() {
         SceneManager.LoadScene(Scenes.ActivityFour);
     }
+    public void LoadActivityFive() {
+        SceneManager.LoadScene(Scenes.ActivityFive);
+    }
+    public void LoadActivitySix() {
+        SceneManager.LoadScene(Scenes.ActivitySix);
+    }
+    public void LoadActivitySeven() {
+        SceneManager.LoadScene(Scenes.ActivitySeven);
+    }
+
     public void CloseApp() {
         Application.Quit();
     }
@@ -59,4 +68,6 @@ public class Scenes {
     public static string ActivityThreePartFive = "ActivityThree_5";
     public static string ActivityFour = "ActivityFour";
     public static string ActivityFive = "ActivityFive";
+    public static string ActivitySix = "ActivitySix";
+    public static string ActivitySeven = "ActivitySeven";
 }

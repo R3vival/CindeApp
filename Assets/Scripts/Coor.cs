@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Coor : MonoBehaviour
 {
     [Header("Sprite To Change")]
-    public Image bodyPart;
+    public SpriteRenderer bodyPart;
   
 
     [Header("Sprites To Cycle Through")]

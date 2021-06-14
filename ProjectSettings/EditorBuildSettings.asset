@@ -39,6 +39,12 @@ EditorBuildSettings:
     path: Assets/Scenes/ActivityThree_5.unity
     guid: 92fda4f259308e74d8bf3e87a418def1
   - enabled: 1
+    path: Assets/Scenes/ActivityFive.unity
+    guid: 57129efceae5c4e49827f5710fc595a8
+  - enabled: 1
     path: Assets/Scenes/ActivityFour.unity
-    guid: 70c4602ccf27cb845b40cb2c478e4067
+    guid: 724dd0cbe233ec54b8fd109e6ed67267
+  - enabled: 1
+    path: Assets/Scenes/ActivitySix.unity
+    guid: 200d6ab30f467bd47920745cc7849cf5
   m_configObjects: {}
