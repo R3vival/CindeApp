@@ -5,9 +5,8 @@ using UnityEngine;
 public class OpenURL : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
+   public void OpenWithUrl(string url) {
+        Application.OpenURL(url);
     }
 
     public void AbrirLink1()

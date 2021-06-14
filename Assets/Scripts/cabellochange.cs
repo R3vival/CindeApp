@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class cabellochange : MonoBehaviour
 {
     [Header("Sprite To Change")]
-    public SpriteRenderer hair;
-    public SpriteRenderer backHair;
+    public Image hair;
+    public Image backHair;
 
     [Header("Sprites To Cycle Through")]
 
@@ -31,15 +31,23 @@ public class cabellochange : MonoBehaviour
             currentOption = 0;
         }
         hair.sprite = hairOptions[currentOption];
+        Cinde.DataController.instance.SetUserHairCut(currentOption);
 
         if (currentOption < 3)
         {
+            var tempColor = backHair.color;
+            tempColor.a = 1f;
+            backHair.color = tempColor;
             backHair.sprite = backhairOptions[currentOption];
-            
+            Cinde.DataController.instance.SetUserBackHairCut(currentOption);
         }
         else
         {
             backHair.sprite = null;
+            var tempColor = backHair.color;
+            tempColor.a = 0f;
+            backHair.color = tempColor;
+            Cinde.DataController.instance.SetUserBackHairCut(99);
         }
     }
 

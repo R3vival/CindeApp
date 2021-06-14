@@ -7,11 +7,16 @@ public class SceneManagment : MonoBehaviour {
         SceneManager.LoadScene(Scenes.MainScene);
     }
     public void LoadEditCharacter() {
-        if (!Cinde.DataController.instance.GetUserAvatar().FirstSetup)
-            ///Never Use int value to load Scenes
+        if(SceneManager.GetActiveScene().name == Scenes.MainScene) {
             SceneManager.LoadScene(Scenes.CreateAvatar);
-        else
-            SceneManager.LoadScene(Scenes.MainScene);
+        } else {
+            if (!Cinde.DataController.instance.GetUserAvatar().FirstSetup)
+                ///Never Use int value to load Scenes
+                SceneManager.LoadScene(Scenes.CreateAvatar);
+            else
+                SceneManager.LoadScene(Scenes.MainScene);
+        }
+        
     }
     public void LoadActivityOne() {
         SceneManager.LoadScene(Scenes.ActivityOne);
@@ -46,8 +51,11 @@ public class SceneManagment : MonoBehaviour {
     public void LoadActivitySix() {
         SceneManager.LoadScene(Scenes.ActivitySix);
     }
-    public void LoadActivitySeven() {
-        SceneManager.LoadScene(Scenes.ActivitySeven);
+    public void LoadActivityTen() {
+        SceneManager.LoadScene(Scenes.ActivityTen);
+    }
+    public void LoadActivityEleven() {
+        SceneManager.LoadScene(Scenes.ActivityEleven);
     }
 
     public void CloseApp() {
@@ -69,5 +77,6 @@ public class Scenes {
     public static string ActivityFour = "ActivityFour";
     public static string ActivityFive = "ActivityFive";
     public static string ActivitySix = "ActivitySix";
-    public static string ActivitySeven = "ActivitySeven";
+    public static string ActivityTen = "ActivityTen";
+    public static string ActivityEleven = "ActivityEleven";
 }

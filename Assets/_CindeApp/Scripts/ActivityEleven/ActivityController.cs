@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivityElevenController : MonoBehaviour
+public class ActivityController : MonoBehaviour
 {
     [SerializeField] public GameObject currentStep;
     [SerializeField] public GameObject previousStep;

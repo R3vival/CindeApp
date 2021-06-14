@@ -763,7 +763,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: -17}
+  m_SizeDelta: {x: -17, y: 1600.183}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &723423721
 MonoBehaviour:
@@ -1104,7 +1104,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1461569519}
         m_TargetAssemblyTypeName: SceneManagment, Assembly-CSharp
-        m_MethodName: LoadActivitySix
+        m_MethodName: LoadActivityEleven
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1544,7 +1544,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1461569519}
         m_TargetAssemblyTypeName: SceneManagment, Assembly-CSharp
-        m_MethodName: LoadActivitySix
+        m_MethodName: LoadActivityTen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3195,7 +3195,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 159, y: 14}
-  m_SizeDelta: {x: -62.86, y: 105.1}
+  m_SizeDelta: {x: -410.641, y: 105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1547281168
 MonoBehaviour:
@@ -3219,10 +3219,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a1854fc29ec448244ba7fe2d7a272f66, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3230,7 +3230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "\xBFEsto es Violencia?"
+  m_Text: "\xA1Nos siguen echando cuento!"
 --- !u!222 &1547281169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3274,7 +3274,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 159, y: 14}
-  m_SizeDelta: {x: -62.86, y: 105.1}
+  m_SizeDelta: {x: -410.641, y: 105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1550987166
 MonoBehaviour:
@@ -3298,7 +3298,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a1854fc29ec448244ba7fe2d7a272f66, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3383,7 +3383,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 159, y: 14}
-  m_SizeDelta: {x: -62.86, y: 105.1}
+  m_SizeDelta: {x: -410.641, y: 105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643321446
 MonoBehaviour:
@@ -3407,7 +3407,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a1854fc29ec448244ba7fe2d7a272f66, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3727,7 +3727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0003582041, y: 0.013857156}
+  m_AnchoredPosition: {x: 0.0003582041, y: -0.00039170685}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1809282307
@@ -3805,7 +3805,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 159, y: 14}
-  m_SizeDelta: {x: -62.86, y: 105.1}
+  m_SizeDelta: {x: -410.641, y: 105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1817927561
 MonoBehaviour:
@@ -3829,7 +3829,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a1854fc29ec448244ba7fe2d7a272f66, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3884,7 +3884,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 159, y: 14}
-  m_SizeDelta: {x: -62.86, y: 105.1}
+  m_SizeDelta: {x: -410.641, y: 105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1831148496
 MonoBehaviour:
@@ -3908,10 +3908,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a1854fc29ec448244ba7fe2d7a272f66, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3919,7 +3919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: Mitos del Amor
+  m_Text: "\xBFEsto es Violencia?"
 --- !u!222 &1831148497
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4374,7 +4374,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 159, y: 14}
-  m_SizeDelta: {x: -62.86, y: 105.1}
+  m_SizeDelta: {x: -410.641, y: 105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2133906053
 MonoBehaviour:
@@ -4398,7 +4398,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a1854fc29ec448244ba7fe2d7a272f66, type: 3}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5

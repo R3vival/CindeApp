@@ -15,12 +15,13 @@ MonoBehaviour:
   user:
     userName: 
     avatar:
-      BodyShapeID: 4
-      HairCutID: 3
+      BodyShapeID: 0
+      HairCutID: 0
       BackHairCutID: 99
-      FaceID: 3
-      DressID: 2
-      MoodID: 2
+      FaceID: 0
+      DressID: 0
+      MoodID: 0
+      FirstSetup: 1
   headsList:
     HeadShapesList:
     - {fileID: 21300000, guid: c6c5b08ca3cd39145a93c943f601c943, type: 3}

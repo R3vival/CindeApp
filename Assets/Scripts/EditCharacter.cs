@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EditCharacter : MonoBehaviour
 {
     [Header("Sprite To Change")]
-    public SpriteRenderer bodyPart;
+    public Image bodyPart;
 
     [Header("Sprites To Cycle Through")]
 
@@ -29,6 +29,21 @@ public class EditCharacter : MonoBehaviour
             currentOption = 0;
         }
         bodyPart.sprite = options[currentOption];
+        switch (bodyPart.name) {
+            case "Expression":
+                Cinde.DataController.instance.SetUserFace(currentOption);
+                break;
+            case "Body":
+                Cinde.DataController.instance.SetUserBody(currentOption);
+                break;
+            case "Dress":
+                Cinde.DataController.instance.SetUserDress(currentOption);
+                break;
+            case "Emoji":
+                Cinde.DataController.instance.SetUserMood(currentOption);
+                break;
+
+        }
     }
 
    

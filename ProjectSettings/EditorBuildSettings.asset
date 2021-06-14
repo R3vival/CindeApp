@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ActivitySix.unity
     guid: 200d6ab30f467bd47920745cc7849cf5
+  - enabled: 1
+    path: Assets/_CindeApp/Scenes/ActivityTen.unity
+    guid: 3bbc7dfddd8ac364da58836ebf0d33af
+  - enabled: 1
+    path: Assets/_CindeApp/Scenes/ActivityEleven.unity
+    guid: 2cf011ed5f8870a44bfa3a11bc09618a
   m_configObjects: {}

@@ -9,7 +9,6 @@ public class DropSlot : MonoBehaviour, IDropHandler
     {
 
     }
-
     public GameObject item;
     public void OnDrop(PointerEventData eventData)
     {
@@ -20,9 +19,6 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item.transform.position = transform.position;
         }
     }
-
-   
-   
     void Update()
     {
         if (item != null && item.transform.parent != transform)

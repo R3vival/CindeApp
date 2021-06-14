@@ -22,7 +22,6 @@ public class dragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
         startParent = transform.parent;
         transform.SetParent(dragParent);
     }
-
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
