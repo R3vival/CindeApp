@@ -6,7 +6,12 @@ public class OpenURL : MonoBehaviour
 {
     // Start is called before the first frame update
    public void OpenWithUrl(string url) {
-        Application.OpenURL(url);
+        switch (url) {
+            case "SnowWhite":
+                Application.OpenURL(url);
+                break;
+        }
+        
     }
 
     public void AbrirLink1()

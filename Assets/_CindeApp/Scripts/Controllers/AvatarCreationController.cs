@@ -2,8 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AvatarCreationController : MonoBehaviour
-{
+public class AvatarCreationController : MonoBehaviour {
     #region Declarations
     [Header("Avatar Assets")]
     [SerializeField] private InputField UserName;
@@ -24,13 +23,20 @@ public class AvatarCreationController : MonoBehaviour
     }
 
     public void LoadAvatar() {
-        AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
-        AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
-        AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);
-        AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
-        AvatarFace.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.FaceID);
-        AvatarMood.sprite = Cinde.DataController.instance.GetMoodById(CurrentAvatar.MoodID);
-        UserName.text = Cinde.DataController.instance.GetUserName();
+        if (AvatarBody != null) 
+            AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
+        if (AvatarHaircut != null)
+            AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
+        if (AvatarBackHaircut != null)
+            AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);
+        if (AvatarDress != null)
+            AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
+        if (AvatarFace != null)
+            AvatarFace.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.FaceID);
+        if (AvatarMood != null)
+            AvatarMood.sprite = Cinde.DataController.instance.GetMoodById(CurrentAvatar.MoodID);
+        if (UserName != null)
+            UserName.text = Cinde.DataController.instance.GetUserName();
     }
     public void SetUserName(InputField name) {
         Cinde.DataController.instance.SetUserName(name.text);
