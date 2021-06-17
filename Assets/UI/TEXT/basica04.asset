@@ -18,8 +18,8 @@ MonoBehaviour:
   pingpongLoop: 0
   continuousLoop: 0
   sortType: 0
-  interval: 0.5
-  singleTime: 1
+  interval: 0.05
+  singleTime: 0.5
   skew: {x: 0, y: 30}
   anchorType: 4
   anchorOffset: {x: 0, y: 0}

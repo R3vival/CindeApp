@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1067769452, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
-  m_Name: New TLBasicA05 Preset 1
+  m_Script: {fileID: -470831428, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
+  m_Name: New CLBasicA05 Preset
   m_EditorClassIdentifier: 
   reverse: 0
   loopCount: 1
@@ -19,5 +19,8 @@ MonoBehaviour:
   continuousLoop: 0
   sortType: 0
   interval: 0.5
-  singleTime: 1
+  singleTime: 1.3
+  startOpacity: 1
+  opacity: 0
   easingType: 0
+  continuousEasing: 0

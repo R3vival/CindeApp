@@ -1,11 +1,12 @@
 ///By R3-Santiago
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AvatarCreationController : MonoBehaviour {
     #region Declarations
     [Header("Avatar Assets")]
-    [SerializeField] private InputField UserName;
+    [SerializeField] private TMP_InputField UserName;
     [SerializeField] private Image AvatarBody;
     [SerializeField] private Image AvatarHaircut;
     [SerializeField] private Image AvatarBackHaircut;
