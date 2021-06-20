@@ -27,21 +27,6 @@ public class SceneManagment : MonoBehaviour {
     public void LoadActivityThree() {
         SceneManager.LoadScene(Scenes.ActivityThree);
     }
-    public void LoadActivityThreePartOne() {
-        SceneManager.LoadScene(Scenes.ActivityThreePartOne);
-    }
-    public void LoadActivityThreePartTwo() {
-        SceneManager.LoadScene(Scenes.ActivityThreePartTwo);
-    }
-    public void LoadActivityThreePartThree() {
-        SceneManager.LoadScene(Scenes.ActivityThreePartThree);
-    }
-    public void LoadActivityThreePartFour() {
-        SceneManager.LoadScene(Scenes.ActivityThreePartFour);
-    }
-    public void LoadActivityThreePartFive() {
-        SceneManager.LoadScene(Scenes.ActivityThreePartFive);
-    }
     public void LoadActivityFour() {
         SceneManager.LoadScene(Scenes.ActivityFour);
     }
@@ -51,11 +36,24 @@ public class SceneManagment : MonoBehaviour {
     public void LoadActivitySix() {
         SceneManager.LoadScene(Scenes.ActivitySix);
     }
-    public void LoadActivityTen() {
+    public void LoadActivityEight()
+    {
+        SceneManager.LoadScene(Scenes.ActivityEight);
+    }
+    public void LoadActivityNine()
+    {
+        SceneManager.LoadScene(Scenes.ActivityNine);
+    }
+    public void LoadActivityTen()
+    {
         SceneManager.LoadScene(Scenes.ActivityTen);
     }
     public void LoadActivityEleven() {
         SceneManager.LoadScene(Scenes.ActivityEleven);
+    }
+    public void LoadActivityTwelve()
+    {
+        SceneManager.LoadScene(Scenes.ActivityTwelve);
     }
 
     public void CloseApp() {
@@ -69,14 +67,12 @@ public class Scenes {
     public static string ActivityOne = "ActivityOne";
     public static string ActivityTwo = "ActivityTwo";
     public static string ActivityThree = "ActivityThree";
-    public static string ActivityThreePartOne = "ActivityThree_1";
-    public static string ActivityThreePartTwo = "ActivityThree_2";
-    public static string ActivityThreePartThree = "ActivityThree_3";
-    public static string ActivityThreePartFour = "ActivityThree_4";
-    public static string ActivityThreePartFive = "ActivityThree_5";
     public static string ActivityFour = "ActivityFour";
     public static string ActivityFive = "ActivityFive";
     public static string ActivitySix = "ActivitySix";
+    public static string ActivityEight = "ActivityEight";
+    public static string ActivityNine = "ActivityNine";
     public static string ActivityTen = "ActivityTen";
     public static string ActivityEleven = "ActivityEleven";
+    public static string ActivityTwelve = "ActivityTwelve";
 }
