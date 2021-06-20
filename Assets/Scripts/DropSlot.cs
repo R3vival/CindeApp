@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DropSlot : MonoBehaviour, IDropHandler
@@ -17,6 +15,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item = dragHandler.itemDragging;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
+
         }
     }
     void Update()
