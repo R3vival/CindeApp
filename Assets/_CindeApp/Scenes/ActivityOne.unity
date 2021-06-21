@@ -5991,7 +5991,7 @@ PrefabInstance:
     - target: {fileID: 4817704386128180642, guid: 865fcd837268d6546899134a3a09ac96,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4817704386128180642, guid: 865fcd837268d6546899134a3a09ac96,
         type: 3}
@@ -7372,6 +7372,7 @@ RectTransform:
   m_Children:
   - {fileID: 228386908}
   - {fileID: 1003742815}
+  - {fileID: 386258329}
   - {fileID: 641489198}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -8724,7 +8725,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 166621089}
-  - {fileID: 386258329}
   m_Father: {fileID: 825379002}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12013,7 +12013,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -15591,7 +15591,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -16733,7 +16733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2129157820
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16861,7 +16861,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1003742815}
+    m_TransformParent: {fileID: 825379002}
     m_Modifications:
     - target: {fileID: 8874602433301138576, guid: 452fe81b7ef81f2419d7a1a312cd23a4,
         type: 3}
@@ -16876,7 +16876,7 @@ PrefabInstance:
     - target: {fileID: 8874602433301138576, guid: 452fe81b7ef81f2419d7a1a312cd23a4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8874602433301138576, guid: 452fe81b7ef81f2419d7a1a312cd23a4,
         type: 3}

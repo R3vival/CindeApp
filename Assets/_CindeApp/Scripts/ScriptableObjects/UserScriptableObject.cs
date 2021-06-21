@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Cinde {
     [CreateAssetMenu(fileName ="User",menuName ="Cinde/UserData")]
-    public class UserScriptableObject : ScriptableObject {
+    public class UserScriptableObject : ScriptableObject {        
         [Header("User Data")]
         public User user;
         [Header("Assets Data")]

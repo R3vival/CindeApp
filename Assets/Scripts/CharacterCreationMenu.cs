@@ -13,6 +13,7 @@ public class CharacterCreationMenu : MonoBehaviour
 
     public void Submit()
     {
+        PlayerPrefs.SetInt("FirstTime", 0);
         Cinde.DataController.instance.SaveUserInfo();
         Cinde.DataController.instance.GetUserAvatar().FirstSetup = true;
         SceneManager.LoadScene(Scenes.MainScene);

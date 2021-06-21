@@ -12,6 +12,11 @@ namespace Cinde {
 
         #region UnityRegion
         private void Awake() {
+
+#if UNITY_EDITOR
+            PlayerPrefs.DeleteAll();
+#endif
+
             if (instance == null) {
                 DontDestroyOnLoad(gameObject);
                 instance = this;

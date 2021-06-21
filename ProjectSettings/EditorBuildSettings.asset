@@ -20,15 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ActivityThree.unity
     guid: ff0b9091ff3d5574c95d7b1d6196df19
-  - enabled: 0
-    path: Assets/Scenes/ActivityThree_2.unity
-    guid: 9b63dbec7778ac440a656ae9967ffcfb
-  - enabled: 0
-    path: Assets/Scenes/ActivityThree_3.unity
-    guid: b1d11276cd948b14b9ab2a92368c829a
-  - enabled: 0
-    path: Assets/Scenes/ActivityThree_5.unity
-    guid: 92fda4f259308e74d8bf3e87a418def1
   - enabled: 1
     path: Assets/Scenes/ActivityFive.unity
     guid: 57129efceae5c4e49827f5710fc595a8
@@ -39,17 +30,17 @@ EditorBuildSettings:
     path: Assets/Scenes/ActivitySix.unity
     guid: 200d6ab30f467bd47920745cc7849cf5
   - enabled: 1
-    path: Assets/_CindeApp/Scenes/ActivityTen.unity
-    guid: 3bbc7dfddd8ac364da58836ebf0d33af
-  - enabled: 1
-    path: Assets/_CindeApp/Scenes/ActivityEleven.unity
-    guid: 2cf011ed5f8870a44bfa3a11bc09618a
-  - enabled: 1
     path: Assets/Scenes/ActivityEight.unity
     guid: 673b333818c352e43adb73fe6dbdae68
   - enabled: 1
     path: Assets/Scenes/ActivityNine.unity
     guid: e2a0dd92fc5c7104da7b3d57ebe877c4
+  - enabled: 1
+    path: Assets/_CindeApp/Scenes/ActivityTen.unity
+    guid: 3bbc7dfddd8ac364da58836ebf0d33af
+  - enabled: 1
+    path: Assets/_CindeApp/Scenes/ActivityEleven.unity
+    guid: 2cf011ed5f8870a44bfa3a11bc09618a
   - enabled: 1
     path: Assets/Scenes/ActivityTwelve.unity
     guid: bdedee0b10ec7f14cb12be2885a92ce8

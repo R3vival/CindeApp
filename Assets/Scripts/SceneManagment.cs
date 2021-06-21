@@ -7,16 +7,10 @@ public class SceneManagment : MonoBehaviour {
         SceneManager.LoadScene(Scenes.MainScene);
     }
     public void LoadEditCharacter() {
-        if(SceneManager.GetActiveScene().name == Scenes.MainScene) {
+        if (!PlayerPrefs.HasKey("FirstTime")) {            
             SceneManager.LoadScene(Scenes.CreateAvatar);
-        } else {
-            if (!Cinde.DataController.instance.GetUserAvatar().FirstSetup)
-                ///Never Use int value to load Scenes
-                SceneManager.LoadScene(Scenes.CreateAvatar);
-            else
-                SceneManager.LoadScene(Scenes.MainScene);
-        }
-        
+        } else
+            SceneManager.LoadScene(Scenes.MainScene);
     }
     public void LoadActivityOne() {
         SceneManager.LoadScene(Scenes.ActivityOne);
@@ -36,23 +30,19 @@ public class SceneManagment : MonoBehaviour {
     public void LoadActivitySix() {
         SceneManager.LoadScene(Scenes.ActivitySix);
     }
-    public void LoadActivityEight()
-    {
+    public void LoadActivityEight() {
         SceneManager.LoadScene(Scenes.ActivityEight);
     }
-    public void LoadActivityNine()
-    {
+    public void LoadActivityNine() {
         SceneManager.LoadScene(Scenes.ActivityNine);
     }
-    public void LoadActivityTen()
-    {
+    public void LoadActivityTen() {
         SceneManager.LoadScene(Scenes.ActivityTen);
     }
     public void LoadActivityEleven() {
         SceneManager.LoadScene(Scenes.ActivityEleven);
     }
-    public void LoadActivityTwelve()
-    {
+    public void LoadActivityTwelve() {
         SceneManager.LoadScene(Scenes.ActivityTwelve);
     }
 
