@@ -9544,7 +9544,7 @@ MonoBehaviour:
       refreshMode: 0
       tag: TextAnim3
     _speed: 1
-    _time: 37.447174
+    _time: 52.991905
     _effectState: 2
   _settings:
     retainedText: 0
@@ -23268,6 +23268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Autoconocimiento
+      objectReference: {fileID: 0}
+    - target: {fileID: 8874602432849258804, guid: 452fe81b7ef81f2419d7a1a312cd23a4,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 8874602433301138576, guid: 452fe81b7ef81f2419d7a1a312cd23a4,
         type: 3}

@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ActivityThree.unity
     guid: ff0b9091ff3d5574c95d7b1d6196df19
   - enabled: 1
-    path: Assets/Scenes/ActivityFive.unity
-    guid: 57129efceae5c4e49827f5710fc595a8
-  - enabled: 1
     path: Assets/Scenes/ActivityFour.unity
     guid: 724dd0cbe233ec54b8fd109e6ed67267
+  - enabled: 1
+    path: Assets/Scenes/ActivityFive.unity
+    guid: 57129efceae5c4e49827f5710fc595a8
   - enabled: 1
     path: Assets/Scenes/ActivitySix.unity
     guid: 200d6ab30f467bd47920745cc7849cf5

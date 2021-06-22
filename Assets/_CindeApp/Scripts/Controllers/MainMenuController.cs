@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     #region Declarations
-    [Header("Avatar Assets")]    
+    [Header("Avatar Assets")]
+    [SerializeField] private Text PlayerName;
     [SerializeField] private Image AvatarBody;
     [SerializeField] private Image AvatarHaircut;
     [SerializeField] private Image AvatarBackHaircut;
@@ -24,6 +25,7 @@ public class MainMenuController : MonoBehaviour
     }
 
     public void LoadAvatar() {
+        PlayerName.text = "!Hola "+Cinde.DataController.instance.GetUserName()+"!";
         AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
         AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
         AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);

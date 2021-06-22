@@ -6,11 +6,14 @@ public class SceneManagment : MonoBehaviour {
     public void LoadMainMenu() {
         SceneManager.LoadScene(Scenes.MainScene);
     }
-    public void LoadEditCharacter() {
+    public void LoadEditCharacterFromLogos() {
         if (!PlayerPrefs.HasKey("FirstTime")) {            
             SceneManager.LoadScene(Scenes.CreateAvatar);
         } else
             SceneManager.LoadScene(Scenes.MainScene);
+    }
+    public void LoadEditCharacer() {
+        SceneManager.LoadScene(Scenes.CreateAvatar);
     }
     public void LoadActivityOne() {
         SceneManager.LoadScene(Scenes.ActivityOne);

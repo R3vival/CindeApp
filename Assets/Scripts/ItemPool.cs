@@ -15,7 +15,8 @@ public class ItemPool : MonoBehaviour, IDropHandler
     #region Unity functions
     private void Awake()
     {
-        InstantiatePool();
+        if(WordPrefab != null)
+            InstantiatePool();
     }
     #endregion
     #region Pool Functions
