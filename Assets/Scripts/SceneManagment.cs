@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneManagment : MonoBehaviour {
+
+    #region LoadScene Region
     public void LoadMainMenu() {
         SceneManager.LoadScene(Scenes.MainScene);
     }
@@ -46,13 +48,16 @@ public class SceneManagment : MonoBehaviour {
         SceneManager.LoadScene(Scenes.ActivityEleven);
     }
     public void LoadActivityTwelve() {
+
         SceneManager.LoadScene(Scenes.ActivityTwelve);
     }
+    #endregion
 
+    #region CloseApp
     public void CloseApp() {
         Application.Quit();
     }
-
+    #endregion
 }
 public class Scenes {
     public static string MainScene = "MenuPrincipal";

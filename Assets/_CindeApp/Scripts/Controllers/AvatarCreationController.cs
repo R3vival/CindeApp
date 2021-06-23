@@ -28,8 +28,15 @@ public class AvatarCreationController : MonoBehaviour {
             AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
         if (AvatarHaircut != null)
             AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
-        if (AvatarBackHaircut != null)
-            AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);
+        if (AvatarBackHaircut != null) {
+            int tempBackHairCut =CurrentAvatar.BackHairCutID;
+            if (tempBackHairCut < Cinde.DataController.instance.GetBackHairCutCount()) {
+                AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(tempBackHairCut);
+                var tempColor = AvatarBackHaircut.color;
+                tempColor.a = 1f;
+                AvatarBackHaircut.color = tempColor;
+            }   
+        }            
         if (AvatarDress != null)
             AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
         if (AvatarFace != null)
@@ -39,7 +46,7 @@ public class AvatarCreationController : MonoBehaviour {
         if (UserName != null)
             UserName.text = Cinde.DataController.instance.GetUserName();
     }
-    public void SetUserName(InputField name) {
+    public void SetUserName(TMP_InputField name) {
         Cinde.DataController.instance.SetUserName(name.text);
     }
 }

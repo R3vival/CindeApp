@@ -56,7 +56,18 @@ public class ActivityOneController : MonoBehaviour {
     public void LoadAvatar() {
         AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
         AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
-        AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);
+
+        if (CurrentAvatar.BackHairCutID < Cinde.DataController.instance.GetBackHairCutCount()) {
+            AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(CurrentAvatar.BackHairCutID);
+            var tempColor = AvatarBackHaircut.color;
+            tempColor.a = 1f;
+            AvatarBackHaircut.color = tempColor;
+        } else {
+            var tempColor = AvatarBackHaircut.color;
+            tempColor.a = 0f;
+            AvatarBackHaircut.color = tempColor;
+        }
+
         AvatarDress.sprite = Cinde.DataController.instance.GetDressById(CurrentAvatar.DressID);
         AvatarMood.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.FaceID);
     }

@@ -29,11 +29,6 @@ public class posterGameObject : MonoBehaviour {
     public List<Sprite> BackgroundImages;
     public List<Sprite> AwardImageList;
     #endregion
-    #region Unity Functions
-    private void Start() {
-        AwardBase.SetActive(false);
-    }
-    #endregion
     #region Poster GameObject Functions
     public void DrawPoster(Cinde.ActivityOne movie) {
         MovieDirector.text = movie.Director;
@@ -50,21 +45,24 @@ public class posterGameObject : MonoBehaviour {
         Year.text = "Año: " + movie.Year;
         Genre.text = "Genero: " + movie.Genre;
         SoundBand.text = "Banda Sonora: " + movie.SoundBand;
-        
+
         if (movie.PosterBackground == 0)
             PosterBackground.sprite = BackgroundImages[movie.PosterBackground];
         else
             PosterBackground.sprite = BackgroundImages[movie.PosterBackground - 1];
+
+        if (AwardContainer.transform.childCount != 0) {
+            for (int i = 0; i < AwardContainer.childCount; i++)
+                Destroy(AwardContainer.transform.GetChild(i).gameObject);
+        }
 
         if (movie.Awards.Count > 0) {
             Image awardImage;
             foreach (int award in movie.Awards) {
                 awardImage = Instantiate(AwardBase, AwardContainer).GetComponent<Image>();
                 awardImage.sprite = AwardImageList[award];
-                awardImage.gameObject.SetActive(true);
             }
         }
-            
         gameObject.SetActive(true);
     }
     #endregion

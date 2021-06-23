@@ -2874,7 +2874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3532,33 +3532,11 @@ MonoBehaviour:
   m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputText: "<TextAnim3>Ahora identifica lo que est\xE1 pasando en tu territorio
-    en temas de inclusi\xF3n y convivencia. \n\nPuedes pensar en la manera c\xF3mo
-    se relacionan todas las personas de tu comunidad con las personas que llegan
-    de otros municipios, ciudades y pa\xEDses. \n\nSelecciona al menos cinco de las
-    situaciones que a continuaci\xF3n se presentan. Ubica abajo lo que consideres
-    menos importante."
-  _parsedText: "Ahora identifica lo que est\xE1 pasando en tu territorio en temas
-    de inclusi\xF3n y convivencia. \n\nPuedes pensar en la manera c\xF3mo se relacionan
-    todas las personas de tu comunidad con las personas que llegan de otros municipios,
-    ciudades y pa\xEDses. \n\nSelecciona al menos cinco de las situaciones que a
-    continuaci\xF3n se presentan. Ubica abajo lo que consideres menos importante."
-  _outputText: "Ahora identifica lo que est\xE1 pasando en tu territorio en temas
-    de inclusi\xF3n y convivencia. \n\nPuedes pensar en la manera c\xF3mo se relacionan
-    todas las personas de tu comunidad con las personas que llegan de otros municipios,
-    ciudades y pa\xEDses. \n\nSelecciona al menos cinco de las situaciones que a
-    continuaci\xF3n se presentan. Ubica abajo lo que consideres menos importante."
-  _effectText: "Ahora identifica lo que est\xE1 pasando en tu territorio en temas
-    de inclusi\xF3n y convivencia. Puedes pensar en la manera c\xF3mo se relacionan
-    todas las personas de tu comunidad con las personas que llegan de otros municipios,
-    ciudades y pa\xEDses. Selecciona al menos cinco de las situaciones que a continuaci\xF3n
-    se presentan. Ubica abajo lo que consideres menos importante."
-  _retainedText: "<TextAnim3>Ahora identifica lo que est\xE1 pasando en tu territorio
-    en temas de inclusi\xF3n y convivencia. \n\nPuedes pensar en la manera c\xF3mo
-    se relacionan todas las personas de tu comunidad con las personas que llegan
-    de otros municipios, ciudades y pa\xEDses. \n\nSelecciona al menos cinco de las
-    situaciones que a continuaci\xF3n se presentan. Ubica abajo lo que consideres
-    menos importante."
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
   _effects:
   - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
     _generalParamGroup:
@@ -10992,11 +10970,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotsIniciales:
-  - {fileID: 1867567128}
-  - {fileID: 2085521865}
-  - {fileID: 1222059656}
-  - {fileID: 56398959}
-  - {fileID: 1583006920}
+  - {fileID: 1644317241}
+  - {fileID: 2094056875}
+  - {fileID: 105853788}
+  - {fileID: 2044859935}
+  - {fileID: 1573484250}
   slotsFinales:
   - {fileID: 2030026792}
   - {fileID: 315739407}
@@ -11004,6 +10982,7 @@ MonoBehaviour:
   - {fileID: 378570346}
   - {fileID: 84453304}
   continuarBtn: {fileID: 143600082}
+  backBtn: {fileID: 1914143462}
 --- !u!1 &1620884788
 GameObject:
   m_ObjectHideFlags: 0

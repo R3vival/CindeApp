@@ -1,6 +1,7 @@
 ﻿///By R3-Santiago
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Cinde {
     public class DataController : MonoBehaviour {
@@ -8,9 +9,11 @@ namespace Cinde {
         public static DataController instance;
         [SerializeField] private UserScriptableObject userData;
         [SerializeField] private ActivityOne currentActivityOne;
+        OnTakeScreenShoot onTakeScreenShoot;
+
         #endregion
 
-        #region UnityRegion
+        #region Unity Functions
         private void Awake() {
 
 #if UNITY_EDITOR
@@ -23,11 +26,18 @@ namespace Cinde {
                 LoadUserInfo();
             } else if (instance != this)
                 Destroy(gameObject);
+
+            if (onTakeScreenShoot == null)
+                onTakeScreenShoot = new OnTakeScreenShoot();
+
+            onTakeScreenShoot.AddListener(TakeScreenShoot);
         }
         private void OnApplicationQuit() {
             SaveUserInfo();
         }
         #endregion
+
+        #region DataController Functions
         /// <summary>
         /// User Constructor
         /// </summary>
@@ -192,7 +202,9 @@ namespace Cinde {
             else
                 return (Sprite)userData.headsList.BackHairCut[id];
         }
-
+        public int GetBackHairCutCount() {
+            return userData.headsList.BackHairCut.Length;
+        }
         /// <summary>   
         /// Get a face from database By id
         /// </summary>
@@ -292,5 +304,16 @@ namespace Cinde {
             userData.activityOneList.Add(currentActivityOne);
         }
         #endregion
+        #endregion
+
+        #region App Functions
+        void TakeScreenShoot(string fileName, int screenShootSize = 1) {
+            ScreenCapture.CaptureScreenshot(fileName, screenShootSize);
+        }
+        #endregion
+    }
+    [System.Serializable]
+    public class OnTakeScreenShoot : UnityEvent<string , int> {
+
     }
 }

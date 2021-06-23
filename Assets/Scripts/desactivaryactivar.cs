@@ -10,7 +10,6 @@ public class desactivaryactivar : MonoBehaviour
     [SerializeField] Button AudioBtn = null;
     private void Start()
     {
-   
         AudioBtn.onClick.AddListener(OcultarAudio);
     }
 

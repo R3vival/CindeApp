@@ -9506,36 +9506,11 @@ MonoBehaviour:
   m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputText: "<TextAnim3>Las emociones encierran un potencial, tanto de protecci\xF3n
-    como de riesgo, son una reacci\xF3n r\xE1pida frente al est\xEDmulo que interpretamos.
-    Cualquier interacci\xF3n influye tanto en el cuerpo como en la mente y por eso
-    la importancia de su regulaci\xF3n a trav\xE9s de un proceso emocional y cognitivo.\n\nAcabas
-    de llegar al universo de las emociones, este espacio te permitir\xE1 visualizar
-    y comprender tu comportamiento como ser humano.\n"
-  _parsedText: "Las emociones encierran un potencial, tanto de protecci\xF3n como
-    de riesgo, son una reacci\xF3n r\xE1pida frente al est\xEDmulo que interpretamos.
-    Cualquier interacci\xF3n influye tanto en el cuerpo como en la mente y por eso
-    la importancia de su regulaci\xF3n a trav\xE9s de un proceso emocional y cognitivo.\n\nAcabas
-    de llegar al universo de las emociones, este espacio te permitir\xE1 visualizar
-    y comprender tu comportamiento como ser humano.\n"
-  _outputText: "Las emociones encierran un potencial, tanto de protecci\xF3n como
-    de riesgo, son una reacci\xF3n r\xE1pida frente al est\xEDmulo que interpretamos.
-    Cualquier interacci\xF3n influye tanto en el cuerpo como en la mente y por eso
-    la importancia de su regulaci\xF3n a trav\xE9s de un proceso emocional y cognitivo.\n\nAcabas
-    de llegar al universo de las emociones, este espacio te permitir\xE1 visualizar
-    y comprender tu comportamiento como ser humano.\n"
-  _effectText: "Las emociones encierran un potencial, tanto de protecci\xF3n como
-    de riesgo, son una reacci\xF3n r\xE1pida frente al est\xEDmulo que interpretamos.
-    Cualquier interacci\xF3n influye tanto en el cuerpo como en la mente y por eso
-    la importancia de su regulaci\xF3n a trav\xE9s de un proceso emocional y cognitivo.Acabas
-    de llegar al universo de las emociones, este espacio te permitir\xE1 visualizar
-    y comprender tu comportamiento como ser humano."
-  _retainedText: "<TextAnim3>Las emociones encierran un potencial, tanto de protecci\xF3n
-    como de riesgo, son una reacci\xF3n r\xE1pida frente al est\xEDmulo que interpretamos.
-    Cualquier interacci\xF3n influye tanto en el cuerpo como en la mente y por eso
-    la importancia de su regulaci\xF3n a trav\xE9s de un proceso emocional y cognitivo.\n\nAcabas
-    de llegar al universo de las emociones, este espacio te permitir\xE1 visualizar
-    y comprender tu comportamiento como ser humano.\n"
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
   _effects:
   - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
     _generalParamGroup:
