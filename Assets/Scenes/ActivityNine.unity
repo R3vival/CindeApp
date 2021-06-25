@@ -18849,6 +18849,7 @@ GameObject:
   - component: {fileID: 2016101141}
   - component: {fileID: 2016101143}
   - component: {fileID: 2016101142}
+  - component: {fileID: 2016101144}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -18908,7 +18909,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFConoces los comportamientos o actitudes asociados a micro-violencias?\r\n\nMira
+  m_Text: "<AnimText4>\xBFConoces los comportamientos o actitudes asociados a micro-violencias?\r\n\nMira
     las afirmaciones. L\xE9elas con detenimiento y reacciona a ellas con uno de los
     tres emojis que ver\xE1s justo debajo de la frase. \r\n\nSi est\xE1s de acuerdo,
     selecciona la cara feliz; si est\xE1s en desacuerdo, la cara enojada; si te es
@@ -18921,6 +18922,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016101140}
   m_CullTransparentMesh: 0
+--- !u!114 &2016101144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016101140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
+  _effects:
+  - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
+    _generalParamGroup:
+      autoStart: 1
+      autoPlay: 1
+      refreshMode: 0
+      tag: AnimText4
+    _speed: 1
+    _time: 0
+    _effectState: 0
+  _settings:
+    retainedText: 0
+    tagSymbols: 0
+    markerSymbols: 0
 --- !u!1 &2024857538
 GameObject:
   m_ObjectHideFlags: 0

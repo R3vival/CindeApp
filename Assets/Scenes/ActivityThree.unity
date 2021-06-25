@@ -6909,46 +6909,11 @@ MonoBehaviour:
   m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputText: "<TextAnim3>Las emociones no son positivas ni negativas, pero est\xE1n
-    involucradas en la toma de decisiones, por esta raz\xF3n es importante reconocerlas,
-    entrenarlas y gestionarlas. Las emociones pueden ser agradables o desagradables,
-    depende mucho del contexto en el que se est\xE9 y de las acciones que se realizan
-    producto de sentir dicha emoci\xF3n.\n\n\xA1Es momento de ponerte a prueba! 
-    Crea un aviso publicitario donde pongas esa emoci\xF3n en venta. Bien sea porque
-    no quieres volver a sentirla o porque quieres que otras personas puedan vivirlas,
-    sentirlas y construir mejores relaciones con base a dicha emoci\xF3n. "
-  _parsedText: "Las emociones no son positivas ni negativas, pero est\xE1n involucradas
-    en la toma de decisiones, por esta raz\xF3n es importante reconocerlas, entrenarlas
-    y gestionarlas. Las emociones pueden ser agradables o desagradables, depende
-    mucho del contexto en el que se est\xE9 y de las acciones que se realizan producto
-    de sentir dicha emoci\xF3n.\n\n\xA1Es momento de ponerte a prueba!  Crea un aviso
-    publicitario donde pongas esa emoci\xF3n en venta. Bien sea porque no quieres
-    volver a sentirla o porque quieres que otras personas puedan vivirlas, sentirlas
-    y construir mejores relaciones con base a dicha emoci\xF3n. "
-  _outputText: "Las emociones no son positivas ni negativas, pero est\xE1n involucradas
-    en la toma de decisiones, por esta raz\xF3n es importante reconocerlas, entrenarlas
-    y gestionarlas. Las emociones pueden ser agradables o desagradables, depende
-    mucho del contexto en el que se est\xE9 y de las acciones que se realizan producto
-    de sentir dicha emoci\xF3n.\n\n\xA1Es momento de ponerte a prueba!  Crea un aviso
-    publicitario donde pongas esa emoci\xF3n en venta. Bien sea porque no quieres
-    volver a sentirla o porque quieres que otras personas puedan vivirlas, sentirlas
-    y construir mejores relaciones con base a dicha emoci\xF3n. "
-  _effectText: "Las emociones no son positivas ni negativas, pero est\xE1n involucradas
-    en la toma de decisiones, por esta raz\xF3n es importante reconocerlas, entrenarlas
-    y gestionarlas. Las emociones pueden ser agradables o desagradables, depende
-    mucho del contexto en el que se est\xE9 y de las acciones que se realizan producto
-    de sentir dicha emoci\xF3n.\xA1Es momento de ponerte a prueba!  Crea un aviso
-    publicitario donde pongas esa emoci\xF3n en venta. Bien sea porque no quieres
-    volver a sentirla o porque quieres que otras personas puedan vivirlas, sentirlas
-    y construir mejores relaciones con base a dicha emoci\xF3n. "
-  _retainedText: "<TextAnim3>Las emociones no son positivas ni negativas, pero est\xE1n
-    involucradas en la toma de decisiones, por esta raz\xF3n es importante reconocerlas,
-    entrenarlas y gestionarlas. Las emociones pueden ser agradables o desagradables,
-    depende mucho del contexto en el que se est\xE9 y de las acciones que se realizan
-    producto de sentir dicha emoci\xF3n.\n\n\xA1Es momento de ponerte a prueba! 
-    Crea un aviso publicitario donde pongas esa emoci\xF3n en venta. Bien sea porque
-    no quieres volver a sentirla o porque quieres que otras personas puedan vivirlas,
-    sentirlas y construir mejores relaciones con base a dicha emoci\xF3n. "
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
   _effects:
   - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
     _generalParamGroup:
