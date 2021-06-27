@@ -2677,6 +2677,7 @@ GameObject:
   - component: {fileID: 623533519}
   - component: {fileID: 623533521}
   - component: {fileID: 623533520}
+  - component: {fileID: 623533522}
   m_Layer: 0
   m_Name: instrucciones
   m_TagString: Untagged
@@ -2736,9 +2737,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Vemos entonces que, a trav\xE9s de una simple imagen y unas frases cargadas
-    de humor, podemos abrir espacios al pensamiento cr\xEDtico para convertir una
-    expresi\xF3n en una reflexi\xF3n."
+  m_Text: "<AnimText2>Vemos entonces que, a trav\xE9s de una simple imagen y unas
+    frases cargadas de humor, podemos abrir espacios al pensamiento cr\xEDtico para
+    convertir una expresi\xF3n en una reflexi\xF3n."
 --- !u!222 &623533521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2747,6 +2748,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623533518}
   m_CullTransparentMesh: 0
+--- !u!114 &623533522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623533518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
+  _effects:
+  - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
+    _generalParamGroup:
+      autoStart: 1
+      autoPlay: 1
+      refreshMode: 0
+      tag: AnimText2
+    _speed: 1
+    _time: 0
+    _effectState: 0
+  _settings:
+    retainedText: 0
+    tagSymbols: 0
+    markerSymbols: 0
 --- !u!1 &626752234
 GameObject:
   m_ObjectHideFlags: 0
@@ -7110,6 +7142,7 @@ GameObject:
   - component: {fileID: 2016101141}
   - component: {fileID: 2016101143}
   - component: {fileID: 2016101142}
+  - component: {fileID: 2016101144}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -7169,10 +7202,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Un meme es un mensaje con tono humor\xEDstico, normalmente compuesto por
-    una imagen y un texto corto. A trav\xE9s de una simple imagen y unas frases cargadas
-    de humor, podemos abrir espacios al pensamiento cr\xEDtico para convertir una
-    expresi\xF3n en una reflexi\xF3n."
+  m_Text: "<AnimText1>Un meme es un mensaje con tono humor\xEDstico, normalmente
+    compuesto por una imagen y un texto corto. A trav\xE9s de una simple imagen y
+    unas frases cargadas de humor, podemos abrir espacios al pensamiento cr\xEDtico
+    para convertir una expresi\xF3n en una reflexi\xF3n."
 --- !u!222 &2016101143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7181,6 +7214,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016101140}
   m_CullTransparentMesh: 0
+--- !u!114 &2016101144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016101140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
+  _effects:
+  - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
+    _generalParamGroup:
+      autoStart: 1
+      autoPlay: 1
+      refreshMode: 0
+      tag: AnimText1
+    _speed: 1
+    _time: 0
+    _effectState: 0
+  _settings:
+    retainedText: 0
+    tagSymbols: 0
+    markerSymbols: 0
 --- !u!1 &2026804422
 GameObject:
   m_ObjectHideFlags: 0

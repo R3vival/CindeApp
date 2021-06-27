@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1824909818, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
-  m_Name: New TWBounceA03 Preset
+  m_Name: animtextos
   m_EditorClassIdentifier: 
   reverse: 0
   loopCount: 1
@@ -18,13 +18,13 @@ MonoBehaviour:
   pingpongLoop: 0
   continuousLoop: 0
   sortType: 0
-  interval: 0.2
-  singleTime: 0.5
+  interval: 0.1
+  singleTime: 0.3
   scale: {x: 0, y: 0}
   anchorType: 4
   anchorOffset: {x: 0, y: 0}
-  bounces: 2
-  bounciness: 0.5
+  bounces: 0
+  bounciness: 0
   easingType: 13
   fadeRange:
     start: 0

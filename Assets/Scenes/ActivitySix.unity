@@ -1877,43 +1877,11 @@ MonoBehaviour:
   m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputText: "<AnimText3>El sexismo es una de las formas de expresi\xF3n de la violencia
-    de g\xE9nero que de manera sutil aparece en los productos culturales como la
-    m\xFAsica. En la primera canci\xF3n aparece la justificaci\xF3n de la violencia,
-    el feminicidio y la culpabilizaci\xF3n que se hace de la v\xEDctima, ya que,
-    seg\xFAn la canci\xF3n, la mujer fue la responsable de las circunstancias por
-    las que fue asesinada y en la segunda, la solicitud de un hombre a una mujer
-    sobre tener relaciones sexuales y c\xF3mo \xE9ste le da alcohol para obtener
-    sexo. "
-  _parsedText: "El sexismo es una de las formas de expresi\xF3n de la violencia de
-    g\xE9nero que de manera sutil aparece en los productos culturales como la m\xFAsica.
-    En la primera canci\xF3n aparece la justificaci\xF3n de la violencia, el feminicidio
-    y la culpabilizaci\xF3n que se hace de la v\xEDctima, ya que, seg\xFAn la canci\xF3n,
-    la mujer fue la responsable de las circunstancias por las que fue asesinada y
-    en la segunda, la solicitud de un hombre a una mujer sobre tener relaciones sexuales
-    y c\xF3mo \xE9ste le da alcohol para obtener sexo. "
-  _outputText: "El sexismo es una de las formas de expresi\xF3n de la violencia de
-    g\xE9nero que de manera sutil aparece en los productos culturales como la m\xFAsica.
-    En la primera canci\xF3n aparece la justificaci\xF3n de la violencia, el feminicidio
-    y la culpabilizaci\xF3n que se hace de la v\xEDctima, ya que, seg\xFAn la canci\xF3n,
-    la mujer fue la responsable de las circunstancias por las que fue asesinada y
-    en la segunda, la solicitud de un hombre a una mujer sobre tener relaciones sexuales
-    y c\xF3mo \xE9ste le da alcohol para obtener sexo. "
-  _effectText: "El sexismo es una de las formas de expresi\xF3n de la violencia de
-    g\xE9nero que de manera sutil aparece en los productos culturales como la m\xFAsica.
-    En la primera canci\xF3n aparece la justificaci\xF3n de la violencia, el feminicidio
-    y la culpabilizaci\xF3n que se hace de la v\xEDctima, ya que, seg\xFAn la canci\xF3n,
-    la mujer fue la responsable de las circunstancias por las que fue asesinada y
-    en la segunda, la solicitud de un hombre a una mujer sobre tener relaciones sexuales
-    y c\xF3mo \xE9ste le da alcohol para obtener sexo. "
-  _retainedText: "<AnimText3>El sexismo es una de las formas de expresi\xF3n de la
-    violencia de g\xE9nero que de manera sutil aparece en los productos culturales
-    como la m\xFAsica. En la primera canci\xF3n aparece la justificaci\xF3n de la
-    violencia, el feminicidio y la culpabilizaci\xF3n que se hace de la v\xEDctima,
-    ya que, seg\xFAn la canci\xF3n, la mujer fue la responsable de las circunstancias
-    por las que fue asesinada y en la segunda, la solicitud de un hombre a una mujer
-    sobre tener relaciones sexuales y c\xF3mo \xE9ste le da alcohol para obtener
-    sexo. "
+  _inputText: 
+  _parsedText: 
+  _outputText: 
+  _effectText: 
+  _retainedText: 
   _effects:
   - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
     _generalParamGroup:
