@@ -34,6 +34,7 @@ public class ActivityOneController : MonoBehaviour {
 
     private Cinde.Avatar CurrentAvatar;
 
+    
     #endregion
     #region Unity Functions
     private void Start() {

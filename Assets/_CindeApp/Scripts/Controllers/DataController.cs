@@ -9,7 +9,6 @@ namespace Cinde {
         public static DataController instance;
         [SerializeField] private UserScriptableObject userData;
         [SerializeField] private ActivityOne currentActivityOne;
-        OnTakeScreenShoot onTakeScreenShoot;
 
         #endregion
 
@@ -27,10 +26,7 @@ namespace Cinde {
             } else if (instance != this)
                 Destroy(gameObject);
 
-            if (onTakeScreenShoot == null)
-                onTakeScreenShoot = new OnTakeScreenShoot();
 
-            onTakeScreenShoot.AddListener(TakeScreenShoot);
         }
         private void OnApplicationQuit() {
             SaveUserInfo();
@@ -307,13 +303,7 @@ namespace Cinde {
         #endregion
 
         #region App Functions
-        void TakeScreenShoot(string fileName, int screenShootSize = 1) {
-            ScreenCapture.CaptureScreenshot(fileName, screenShootSize);
-        }
+        
         #endregion
-    }
-    [System.Serializable]
-    public class OnTakeScreenShoot : UnityEvent<string , int> {
-
     }
 }
