@@ -913,6 +913,7 @@ RectTransform:
   - {fileID: 1188365001}
   - {fileID: 951860562}
   - {fileID: 1468675495}
+  - {fileID: 1046304962}
   m_Father: {fileID: 188699763}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7015,6 +7016,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034059234}
   m_CullTransparentMesh: 0
+--- !u!1001 &1046304960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 133743301}
+    m_Modifications:
+    - target: {fileID: 1742132245028028404, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_Name
+      value: ScreenShootPopUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 63.781006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 437.90198
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.099975586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 223.11469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245146351410, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1590366014}
+    - target: {fileID: 1742132245146351410, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742132245146351410, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneManagment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7119e674353d60b46aece5a1e1be2c80, type: 3}
+--- !u!114 &1046304961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1742132245028028400, guid: 7119e674353d60b46aece5a1e1be2c80,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046304960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5a5d4d88f44b94191c214f6dcb4f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &1046304962 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1742132245028028407, guid: 7119e674353d60b46aece5a1e1be2c80,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046304960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063476530
 GameObject:
   m_ObjectHideFlags: 0
@@ -9997,16 +10150,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590366014}
-        m_TargetAssemblyTypeName: SceneManagment, Assembly-CSharp
-        m_MethodName: LoadMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1046304961}
+        m_TargetAssemblyTypeName: TakeScreenShootController, Assembly-CSharp
+        m_MethodName: TakeScreenShoot
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: LoQueSeEsperaDeMiYDeTiReflex
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1504918160
@@ -13624,11 +13777,16 @@ MonoBehaviour:
   m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputText: 
-  _parsedText: 
-  _outputText: 
-  _effectText: 
-  _retainedText: 
+  _inputText: "<AnimText5>Completa las siguientes frases seg\xFAn lo culturalmente
+    aprendido en cada \xE1mbito."
+  _parsedText: "Completa las siguientes frases seg\xFAn lo culturalmente aprendido
+    en cada \xE1mbito."
+  _outputText: "Completa las siguientes frases seg\xFAn lo culturalmente aprendido
+    en cada \xE1mbito."
+  _effectText: "Completa las siguientes frases seg\xFAn lo culturalmente aprendido
+    en cada \xE1mbito."
+  _retainedText: "<AnimText5>Completa las siguientes frases seg\xFAn lo culturalmente
+    aprendido en cada \xE1mbito."
   _effects:
   - _preset: {fileID: 11400000, guid: a335eb36c5a95bc4f9b2324ea1cacf91, type: 2}
     _generalParamGroup:
@@ -13637,8 +13795,8 @@ MonoBehaviour:
       refreshMode: 0
       tag: AnimText5
     _speed: 1
-    _time: 0
-    _effectState: 0
+    _time: 4.458141
+    _effectState: 2
   _settings:
     retainedText: 0
     tagSymbols: 0
