@@ -8,10 +8,12 @@ using UnityEngine.UI;
 public class ActivityOneController : MonoBehaviour {
     #region Declarations
     [SerializeField] private GameObject activityPanel;
+
     [Header("Assets")]
     [SerializeField] private posterGameObject poster;
     [SerializeField] private GameObject body;
     [SerializeField] private GameObject backBtn;
+
     [Header("Activity Assets")]
     [SerializeField] private TMP_InputField directorInputField;
     [SerializeField] private TMP_InputField nameInputField;
@@ -21,9 +23,18 @@ public class ActivityOneController : MonoBehaviour {
     [SerializeField] private TMP_Dropdown genreDropDown;
     [SerializeField] private TMP_InputField yearInputField;
     [SerializeField] private TMP_InputField bandInputField;
-    [SerializeField] private TMP_InputField reflexInputField;
     [SerializeField] private GameObject posterBackgroundParent;
     [SerializeField] private GameObject awardsParent;
+
+    [Header("Reflexion Components")]
+    [SerializeField] private TMP_InputField QuestionOneInputField;
+    [SerializeField] private TMP_InputField QuestionTwoInputField;
+    [SerializeField] private TMP_InputField QuestionThreeInputField;
+    [SerializeField] private TMP_InputField QuestionFourInputField;
+    [SerializeField] private TMP_InputField QuestionFiveInputField;
+    [Space]
+    [SerializeField] private TMP_InputField reflexInputField;
+    
 
     [Header("Avatar Assets")]
     [SerializeField] private Image AvatarBody;
@@ -42,7 +53,7 @@ public class ActivityOneController : MonoBehaviour {
         activityPanel.SetActive(true);
 
         ///Set current step as first
-        if (Cinde.DataController.instance.GetCurrentActivityOne() == null)
+        if (Cinde.DataController.instance.ActOneGetCurrentActivity() == null)
             Cinde.DataController.instance.NewActivity(Cinde.DataType.ActivityOne);
         else
             LoadActivity();
@@ -73,7 +84,7 @@ public class ActivityOneController : MonoBehaviour {
         AvatarMood.sprite = Cinde.DataController.instance.GetFaceById(CurrentAvatar.FaceID);
     }
     public void LoadActivity() {
-        Cinde.ActivityOne currentActivity = Cinde.DataController.instance.GetCurrentActivityOne();
+        Cinde.ActivityOne currentActivity = Cinde.DataController.instance.ActOneGetCurrentActivity();
         if (currentActivity != null) {
             directorInputField.text = currentActivity.Director;
             nameInputField.text = currentActivity.MovieName;
@@ -105,20 +116,29 @@ public class ActivityOneController : MonoBehaviour {
 
             posterBackgroundParent.transform.GetChild(currentActivity.PosterBackground == 0 ? currentActivity.PosterBackground : currentActivity.PosterBackground - 1).transform.GetChild(0).gameObject.SetActive(true);
 
+            #region Reflex
+
+            QuestionOneInputField.text = currentActivity.QuestionOne;
+            QuestionTwoInputField.text = currentActivity.QuestionTwo;
+            QuestionThreeInputField.text = currentActivity.QuestionThree;
+            QuestionFourInputField.text = currentActivity.QuestionFour;
+            QuestionFiveInputField.text = currentActivity.QuestionFive;
             reflexInputField.text = currentActivity.Reflex;
+
+            #endregion
         }
     }
     /// <summary>
     /// Save Movie Director
     /// </summary>    
     public void SaveMovieDirector() {
-        Cinde.DataController.instance.SaveDirector(directorInputField.text);
+        Cinde.DataController.instance.ActOneSaveDirector(directorInputField.text);
     }
     /// <summary>
     /// Save Movie Name
     /// </summary>    
     public void SaveMovieName() {
-        Cinde.DataController.instance.SaveMovieName(nameInputField.text);
+        Cinde.DataController.instance.ActOneSaveMovieName(nameInputField.text);
     }
     /// <summary>
     /// Save Movie Main Actor
@@ -126,13 +146,13 @@ public class ActivityOneController : MonoBehaviour {
     public void SaveMovieMainActors(int index) {
         switch (index) {
             case 1:
-                Cinde.DataController.instance.SaveMainActor(actorsInputField_1.text, GetIndex(actorsInputField_1.name));
+                Cinde.DataController.instance.ActOneSaveMainActor(actorsInputField_1.text, GetIndex(actorsInputField_1.name));
                 break;
             case 2:
-                Cinde.DataController.instance.SaveMainActor(actorsInputField_2.text, GetIndex(actorsInputField_2.name));
+                Cinde.DataController.instance.ActOneSaveMainActor(actorsInputField_2.text, GetIndex(actorsInputField_2.name));
                 break;
             case 3:
-                Cinde.DataController.instance.SaveMainActor(actorsInputField_3.text, GetIndex(actorsInputField_3.name));
+                Cinde.DataController.instance.ActOneSaveMainActor(actorsInputField_3.text, GetIndex(actorsInputField_3.name));
                 break;
         }
 
@@ -141,44 +161,63 @@ public class ActivityOneController : MonoBehaviour {
     /// Save Movie Genre
     /// </summary>
     public void SaveMovieGenre() {
-        Cinde.DataController.instance.SaveMovieGenre(genreDropDown.options[genreDropDown.value].text);
+        Cinde.DataController.instance.ActOneSaveMovieGenre(genreDropDown.options[genreDropDown.value].text);
     }
     /// <summary>
     /// Save Movie Year
     /// </summary>
     public void SaveMovieYear() {
-        Cinde.DataController.instance.SaveMovieYear(int.Parse(yearInputField.text));
+        Cinde.DataController.instance.ActOneSaveMovieYear(int.Parse(yearInputField.text));
     }
     /// <summary>
     /// Save Movie sound band
     /// </summary>
     public void SaveMovieBand() {
-        Cinde.DataController.instance.SaveMovieSoundBand(bandInputField.text);
+        Cinde.DataController.instance.ActOneSaveMovieSoundBand(bandInputField.text);
     }
     /// <summary>
     /// Save Movie Poster Background
     /// </summary>
     /// <param name="index"></param>
     public void SavePosterBackground(int index) {
-        Cinde.DataController.instance.SaveMoviePosterBackground(index);
+        Cinde.DataController.instance.ActOneSaveMoviePosterBackground(index);
     }
     public void SavePosterAward(GameObject Award) {
-        if (Cinde.DataController.instance.SaveMovieAward(GetIndex(Award.name) - 1))
+        if (Cinde.DataController.instance.ActOneSaveMovieAward(GetIndex(Award.name) - 1))
             Award.SetActive(true);
         else
             Award.SetActive(false);
+    }
+    public void SaveQuestion(TMP_InputField question) {
+        switch (question.name) {
+            case "QuestionOne_InputField":
+                Cinde.DataController.instance.ActOneSaveQuestion(question.text,1);
+                break;
+            case "QuestionTwo_InputField":
+                Cinde.DataController.instance.ActOneSaveQuestion(question.text, 2);
+                break;
+            case "QuestionThree_InputField":
+                Cinde.DataController.instance.ActOneSaveQuestion(question.text, 3);
+                break;
+            case "QuestionFour_InputField":
+                Cinde.DataController.instance.ActOneSaveQuestion(question.text, 4);
+                break;
+            case "QuestionFive_InputField":
+                Cinde.DataController.instance.ActOneSaveQuestion(question.text, 5);
+                break;
+        }
     }
     /// <summary>
     /// Save movie Reflex
     /// </summary>
     public void SaveReflex() {
-        Cinde.DataController.instance.SaveMovieReflex(reflexInputField.text);
+        Cinde.DataController.instance.ActOneSaveMovieReflex(reflexInputField.text);
     }
     /// <summary>
     /// Show Poster
     /// </summary>
     public void ShowPoster() {
-        poster.DrawPoster(Cinde.DataController.instance.GetCurrentActivityOne());
+        poster.DrawPoster(Cinde.DataController.instance.ActOneGetCurrentActivity());
     }
     public void BackPoster() {
         poster.gameObject.SetActive(false);
@@ -187,7 +226,7 @@ public class ActivityOneController : MonoBehaviour {
     /// Save movie To DB
     /// </summary>
     public void SaveActivity() {
-        Cinde.DataController.instance.SaveActivity();
+        Cinde.DataController.instance.SaveActivity(Cinde.DataType.ActivityOne);
         transform.GetComponent<SceneManagment>().LoadMainMenu();
     }
     private int GetIndex(string text) {

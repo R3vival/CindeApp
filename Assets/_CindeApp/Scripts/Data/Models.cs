@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Cinde {
     [Serializable]
-    public class User{
+    public class User {
         [SerializeField]private string userName;
         [SerializeField]private Avatar avatar;
 
@@ -53,11 +53,27 @@ namespace Cinde {
         public string SoundBand;
         public int PosterBackground = 0;
         public List<int> Awards;
+
+
+        public string QuestionOne;
+        public string QuestionTwo;
+        public string QuestionThree;
+        public string QuestionFour;
+        public string QuestionFive;
         public string Reflex;
 
         public ActivityOne() {
             MainActors = new List<string>();
             Awards = new List<int>();
         }
+    }
+    [Serializable]
+    public class ActivityEight {
+        public int MemeBackground;
+        public string TextOne;
+        public string TextTwo;
+
+        public ActivityEight(){            
+            }
     }
 }

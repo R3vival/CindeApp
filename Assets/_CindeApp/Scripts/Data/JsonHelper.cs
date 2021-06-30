@@ -37,7 +37,7 @@ namespace Cinde {
 
             CheckFileExistance(jsonPath);
 
-            activityString = JsonUtility.ToJson(DataController.instance.GetCurrentActivityOne());
+            activityString = JsonUtility.ToJson(DataController.instance.ActOneGetCurrentActivity());
             File.WriteAllText(jsonPath, activityString);
         }
         /// <summary>
@@ -68,9 +68,14 @@ namespace Cinde {
     public enum DataType {
         User,
         ActivityOne,
-        ActivityTwo,
         ActivityThree,
         ActivityFour,
-        ActivityFive,        
+        ActivityFive,
+        ActivitySix,
+        ActivityEight,
+        ActivityNine,
+        ActivityTen,  
+        ActivityEleven,
+        ActivityTwelve,        
     }
 }

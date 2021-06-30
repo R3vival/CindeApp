@@ -9,7 +9,16 @@ namespace Cinde {
         public static DataController instance;
         [SerializeField] private UserScriptableObject userData;
         [SerializeField] private ActivityOne currentActivityOne;
-
+        //[SerializeField] private ActivityTwo currentActivityTwo;
+        //[SerializeField] private ActivityThree currentActivityThree;
+        //[SerializeField] private ActivityFour currentActivityFour;
+        //[SerializeField] private ActivityFive currentActivityFive;
+        //[SerializeField] private ActivitySix currentActivitySix;
+        [SerializeField] private ActivityEight currentActivityEight;
+        //[SerializeField] private ActivityNine currentActivityNine;
+        //[SerializeField] private ActivityTen currentActivityTen;
+        //[SerializeField] private ActivityEleven currentActivityEleven;
+        //[SerializeField] private ActivityTwelve currentActivityTwelve;
         #endregion
 
         #region Unity Functions
@@ -51,7 +60,7 @@ namespace Cinde {
         /// <summary>
         /// Save user info as Json
         /// </summary>
-        public void SaveUserInfo(){
+        public void SaveUserInfo() {
             JsonDeserializer.UserToJson();
         }
         /// <summary>
@@ -244,45 +253,63 @@ namespace Cinde {
                 case DataType.ActivityOne:
                     currentActivityOne = new ActivityOne();
                     break;
-                case DataType.ActivityTwo:
-                    break;
                 case DataType.ActivityThree:
                     break;
                 case DataType.ActivityFour:
                     break;
                 case DataType.ActivityFive:
                     break;
+                case DataType.ActivitySix:
+                    break;
+                case DataType.ActivityEight:
+                    currentActivityEight = new ActivityEight();
+                    break;
+                case DataType.ActivityNine:
+                    break;
+                case DataType.ActivityTen:
+                    break;
+                case DataType.ActivityEleven:
+                    break;
+                case DataType.ActivityTwelve:
+                    break;
             }
-            
+
+        }
+        public void SaveActivity(DataType type) {
+            switch (type) {
+                case DataType.ActivityOne:
+                    userData.activityOne = currentActivityOne;
+                    break;
+            }
         }
         #endregion
         #region Activity One
-        public void SaveDirector(string director) {
+        public void ActOneSaveDirector(string director) {
             currentActivityOne.Director = director;
         }
-        public void SaveMovieName(string name) {
+        public void ActOneSaveMovieName(string name) {
             currentActivityOne.MovieName = name;
         }
-        public void SaveMainActor(string character, int index) {
+        public void ActOneSaveMainActor(string character, int index) {
             if (character != "")
                 if (currentActivityOne.MainActors.Count >= index)
                     currentActivityOne.MainActors[index - 1] = character;
                 else
                     currentActivityOne.MainActors.Add(character);
         }
-        public void SaveMovieGenre(string genre) {
+        public void ActOneSaveMovieGenre(string genre) {
             currentActivityOne.Genre = genre;
         }
-        public void SaveMovieYear(int year) {
+        public void ActOneSaveMovieYear(int year) {
             currentActivityOne.Year = year;
         }
-        public void SaveMovieSoundBand(string soundBand) {
+        public void ActOneSaveMovieSoundBand(string soundBand) {
             currentActivityOne.SoundBand = soundBand;
         }
-        public void SaveMoviePosterBackground(int index) {
+        public void ActOneSaveMoviePosterBackground(int index) {
             currentActivityOne.PosterBackground = index;
         }
-        public bool SaveMovieAward(int index) {
+        public bool ActOneSaveMovieAward(int index) {
             if (currentActivityOne.Awards.Contains(index))
                 return false;
             else {
@@ -290,20 +317,61 @@ namespace Cinde {
                 return true;
             }
         }
-        public void SaveMovieReflex(string reflex) {
+        public void ActOneSaveQuestion(string question, int index = 1) {
+            switch (index) {
+                case 1:
+                    currentActivityOne.QuestionOne = question;
+                    break;
+                case 2:
+                    currentActivityOne.QuestionTwo = question;
+                    break;
+                case 3:
+                    currentActivityOne.QuestionThree = question;
+                    break;
+                case 4:
+                    currentActivityOne.QuestionFour = question;
+                    break;
+                case 5:
+                    currentActivityOne.QuestionFive = question;
+                    break;
+            }
+        }
+        public void ActOneSaveMovieReflex(string reflex) {
             currentActivityOne.Reflex = reflex;
         }
-        public ActivityOne GetCurrentActivityOne() {
+        public ActivityOne ActOneGetCurrentActivity() {
             return currentActivityOne;
         }
-        public void SaveActivity() {
-            userData.activityOneList.Add(currentActivityOne);
+
+        #endregion
+
+        #region Activity Eight
+        public ActivityEight ActEightGetCurrentActivity() {
+            return currentActivityEight;
+        }
+        public void ActEightSetMemeBackground(int index) {
+            currentActivityEight.MemeBackground = index;
+        }
+        public int ActEightGetMemeBackground() {
+            return currentActivityEight.MemeBackground;
+        }
+        public void ActEightSetTextOne(string text) {
+            currentActivityEight.TextOne = text;
+        }
+        public string ActEightGetTextOne() {
+            return currentActivityEight.TextOne;
+        }
+        public void ActEightSetTextTwo(string text) {
+            currentActivityEight.TextTwo = text;
+        }
+        public string ActEightGetTextTwo() {
+            return currentActivityEight.TextTwo;
         }
         #endregion
         #endregion
 
         #region App Functions
-        
+
         #endregion
     }
 }

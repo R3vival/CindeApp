@@ -13,6 +13,16 @@ namespace Cinde {
         public Dresses dressesList;
         public Moods moodsList;
         [Header("Activity One DB")]
-        public List<ActivityOne> activityOneList;
+        public ActivityOne activityOne;
+        //public ActivityThree activityThree;
+        //public ActivityFour activityFour;
+        //public ActivityFive activityFive;
+        //public ActivitySix activitySix;
+        public ActivityEight activityEight;
+        //public ActivityNine activityNine;
+        //public ActivityTen activityTen;
+        //public ActivityEleven activityEleven;
+        //public ActivityTwelve activityTwelve;
+
     }
 }

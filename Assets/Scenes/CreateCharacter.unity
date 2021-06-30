@@ -250,7 +250,6 @@ GameObject:
   - component: {fileID: 203175432}
   - component: {fileID: 203175435}
   - component: {fileID: 203175434}
-  - component: {fileID: 203175433}
   m_Layer: 0
   m_Name: Titulo
   m_TagString: Untagged
@@ -277,37 +276,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000045776367, y: -250}
   m_SizeDelta: {x: 1125.6, y: 258.41}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &203175433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203175431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _inputText: 
-  _parsedText: 
-  _outputText: 
-  _effectText: 
-  _retainedText: 
-  _effects:
-  - _preset: {fileID: 11400000, guid: 724ea8a0d386c6a4eb07558ee2a1611f, type: 2}
-    _generalParamGroup:
-      autoStart: 1
-      autoPlay: 1
-      refreshMode: 0
-      tag: TextAnim1
-    _speed: 1
-    _time: 0
-    _effectState: 0
-  _settings:
-    retainedText: 0
-    tagSymbols: 0
-    markerSymbols: 0
 --- !u!114 &203175434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <TextAnim1>Crea tu avatar
+  m_Text: Crea tu avatar
 --- !u!222 &203175435
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1522,7 +1490,7 @@ PrefabInstance:
     - target: {fileID: 4817704386128180643, guid: 865fcd837268d6546899134a3a09ac96,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 865fcd837268d6546899134a3a09ac96, type: 3}
@@ -3634,6 +3602,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492822124297564582, guid: b362fabb061d45a4390a6ee714d83300,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 623.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492822124297564582, guid: b362fabb061d45a4390a6ee714d83300,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 616.051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492822124297564582, guid: b362fabb061d45a4390a6ee714d83300,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.1904
       objectReference: {fileID: 0}
     - target: {fileID: 2492822124297564583, guid: b362fabb061d45a4390a6ee714d83300,
         type: 3}

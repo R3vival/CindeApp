@@ -11,14 +11,13 @@ public class TakeScreenShootController : MonoBehaviour {
     }
     public void TakeScreenShoot(string fileName) {
         blinkGameObject.SetActive(true);
-#if !UNITY_EDITOR
+
         StartCoroutine(ShowPanel(fileName));
-#endif
     }
     IEnumerator ShowPanel(string fileName) {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         yield return new WaitForEndOfFrame();
-
+#if !UNITY_EDITOR
         Texture2D texture =  new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24,false);
 
         texture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
@@ -29,7 +28,7 @@ public class TakeScreenShootController : MonoBehaviour {
         NativeGallery.SaveImageToGallery(texture, "CindeApp", name);
 
         Destroy(texture);
-
+#endif
         blinkGameObject.SetActive(false);
         popUpGameObject.SetActive(true);
     }
