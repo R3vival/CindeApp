@@ -269,7 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73534281}
   m_Layer: 5
-  m_Name: PiramideInvertida
+  m_Name: Four_PiramideInvertida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,7 +515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 145066840}
   m_Layer: 5
-  m_Name: Actividad5
+  m_Name: Five_SeDiceDeMi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,7 +705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232643187}
   m_Layer: 5
-  m_Name: Actividad8
+  m_Name: Eight_MemeCreativo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1748,7 +1748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 703642769}
   m_Layer: 5
-  m_Name: Mi Pelicula
+  m_Name: One_Mi Pelicula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2094,7 +2094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 835310710}
   m_Layer: 5
-  m_Name: EmocionesEnVenta
+  m_Name: Three_EmocionesEnVenta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2799,7 +2799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945998755}
   m_Layer: 5
-  m_Name: Actividad9
+  m_Name: Nine_OjoConEso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4663,7 +4663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527668037}
   m_Layer: 5
-  m_Name: Actividad11
+  m_Name: Eleven_EstoEsViolencia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5180,7 +5180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837831636}
   m_Layer: 5
-  m_Name: Actividad6
+  m_Name: Six_MitosDelAmorRomantico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6036,7 +6036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016584801}
   m_Layer: 5
-  m_Name: Actividad10
+  m_Name: Ten_NosSiguenEchandoCuento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6072,7 +6072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126454558}
   m_Layer: 5
-  m_Name: Actividad12
+  m_Name: Twelve_LoQueSeEsperaDeMiYDeTi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

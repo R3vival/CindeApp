@@ -25,7 +25,7 @@ public class MainMenuController : MonoBehaviour
     }
 
     public void LoadAvatar() {
-        PlayerName.text = "!Hola "+Cinde.DataController.instance.GetUserName()+"!";
+        PlayerName.text = "¡Hola " + Cinde.DataController.instance.GetUserName()+"!";
         AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
         AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
 

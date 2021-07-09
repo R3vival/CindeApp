@@ -11159,7 +11159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFCu\xE1l fue la situaci\xF3n que mas te llamo la atenci\xF3n?\n\n\nOjo
+  m_Text: "\xBFCu\xE1l fue la situaci\xF3n que m\xE1s te llamo la atenci\xF3n?\n\n\n\xA1Ojo
     con eso!, hay que prestar atenci\xF3n cuando:"
 --- !u!222 &1127736102
 CanvasRenderer:

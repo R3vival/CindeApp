@@ -5441,6 +5441,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 448079618}
     m_Modifications:
+    - target: {fileID: 1742132244379932071, guid: 7119e674353d60b46aece5a1e1be2c80,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.8235294
+      objectReference: {fileID: 0}
     - target: {fileID: 1742132245028028404, guid: 7119e674353d60b46aece5a1e1be2c80,
         type: 3}
       propertyPath: m_Name
@@ -5853,8 +5858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 383.8}
-  m_SizeDelta: {x: 930, y: 78.393585}
+  m_AnchoredPosition: {x: 0, y: 367.18298}
+  m_SizeDelta: {x: 930, y: 111.6277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &864187181
 MonoBehaviour:
@@ -6938,8 +6943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 391.3}
-  m_SizeDelta: {x: 930, y: 63.62549}
+  m_AnchoredPosition: {x: 0, y: 359.91214}
+  m_SizeDelta: {x: 930, y: 126.4012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011779832
 MonoBehaviour:
@@ -10079,7 +10084,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: las Mujeres
+  m_Text: las mujeres
 --- !u!222 &1420692586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10871,7 +10876,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: las Mujeres
+  m_Text: las mujeres
 --- !u!222 &1521289380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11514,7 +11519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: las Mujeres
+  m_Text: las mujeres
 --- !u!222 &1701220190
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14241,7 +14246,6 @@ GameObject:
   - component: {fileID: 2016101141}
   - component: {fileID: 2016101143}
   - component: {fileID: 2016101142}
-  - component: {fileID: 2016101144}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -14301,8 +14305,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<AnimText5>Completa las siguientes frases seg\xFAn lo culturalmente aprendido
-    en cada \xE1mbito."
+  m_Text: "Completa las siguientes frases seg\xFAn lo culturalmente aprendido en
+    cada \xE1mbito."
 --- !u!222 &2016101143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14311,18 +14315,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016101140}
   m_CullTransparentMesh: 0
---- !u!114 &2016101144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016101140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1220488118, guid: 9abd0afa941745643b78b8f2c0918690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2020436558
 GameObject:
   m_ObjectHideFlags: 0
@@ -14360,7 +14352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -437}
+  m_AnchoredPosition: {x: 0, y: -446}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2026804422
@@ -14767,8 +14759,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 371.4}
-  m_SizeDelta: {x: 930, y: 103.34033}
+  m_AnchoredPosition: {x: 0, y: 362.16827}
+  m_SizeDelta: {x: 930, y: 121.8038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081109031
 MonoBehaviour:
@@ -14803,7 +14795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: coquetos(as) yse preocupen por cuidar su imagen y ser atractivos(as).
+  m_Text: coquetos(as) y se preocupen por cuidar su imagen y ser atractivos(as).
 --- !u!222 &2081109032
 CanvasRenderer:
   m_ObjectHideFlags: 0
