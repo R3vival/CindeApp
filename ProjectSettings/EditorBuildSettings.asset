@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_CindeApp/Scenes/DisclaimerScene.unity
+    guid: 0b8a9a3684ca1aa4a9a32f70b8a37406
+  - enabled: 1
     path: Assets/Scenes/PantallaInicio.unity
     guid: bf4629cdcd8d57f4c833e574ceefa834
   - enabled: 1

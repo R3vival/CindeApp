@@ -15,33 +15,48 @@ MonoBehaviour:
   user:
     userName: 
     avatar:
-      BodyShapeID: 0
-      HairCutID: 0
-      BackHairCutID: 99
+      BodyShapeID: 3
+      BodyShapeColorID: 0
+      HairCutID: 1
+      HairCutColorID: 3
+      BackHairCutID: 1
       FaceID: 0
       DressID: 0
       MoodID: 0
       FirstSetup: 1
   headsList:
-    HeadShapesList:
+    BodyShapesList:
     - {fileID: 21300000, guid: c6c5b08ca3cd39145a93c943f601c943, type: 3}
     - {fileID: 21300000, guid: 27a74b8184c2d204cb78517b59cb2d65, type: 3}
     - {fileID: 21300000, guid: 046fd47d002da8a409cb3b865ab19a74, type: 3}
     - {fileID: 21300000, guid: d8cc2b70fb96cb94a82033765bfa1af9, type: 3}
     - {fileID: 21300000, guid: 25629b9b65ec05541b6af124e8ca7733, type: 3}
-    HairCut:
+    BodyShapeColorList:
+    - {r: 0.93725497, g: 0.80392164, b: 0.7058824, a: 1}
+    - {r: 0.87843144, g: 0.6901961, b: 0.54901963, a: 1}
+    - {r: 0.69803923, g: 0.4784314, b: 0.2784314, a: 1}
+    - {r: 0.5686275, g: 0.29411766, b: 0.24705884, a: 1}
+    - {r: 0.34901962, g: 0.08235294, b: 0.03137255, a: 1}
+    HairCutList:
+    - {fileID: 21300000, guid: b74da8679e216504da0ed5dc582ba53f, type: 3}
     - {fileID: 21300000, guid: 99f9855b88180b645bcd6ead1dca16ae, type: 3}
     - {fileID: 21300000, guid: 36a14b7a60e2319419ac20108c933f29, type: 3}
     - {fileID: 21300000, guid: d490baa5e9029c947926b478fe1ba270, type: 3}
-    - {fileID: 21300000, guid: b74da8679e216504da0ed5dc582ba53f, type: 3}
     - {fileID: 21300000, guid: cc56065b37e744e4992d15a0d96b62af, type: 3}
     - {fileID: 21300000, guid: 75829a964a40b8848934732825336c2b, type: 3}
     - {fileID: 21300000, guid: bbf70fa6c6381f040a608a643bec4b96, type: 3}
     - {fileID: 21300000, guid: 4a33dbe48e839374f977e831c43440bc, type: 3}
-    BackHairCut:
+    BackHairCutList:
     - {fileID: 21300000, guid: 6ba43556c9e0bb449a639d0017f3768b, type: 3}
     - {fileID: 21300000, guid: 1eec64520490a944c8ee6bfdc3a1a809, type: 3}
     - {fileID: 21300000, guid: 8e50e036249c20841b7a4b093d63aeec, type: 3}
+    HairColorList:
+    - {r: 0.9960785, g: 0.8862746, b: 0.35686275, a: 1}
+    - {r: 0.90196085, g: 0.20784315, b: 0.07450981, a: 1}
+    - {r: 0.1254902, g: 0.12156863, b: 0.12156863, a: 1}
+    - {r: 0.36862746, g: 0.23137257, b: 0.011764707, a: 1}
+    - {r: 0.3647059, g: 0.1137255, b: 0.007843138, a: 1}
+    - {r: 0.3254902, g: 0.3254902, b: 0.76470596, a: 1}
   facesList:
     FacesList:
     - {fileID: 21300000, guid: 8ba703cd1d1c64141869c04189c19777, type: 3}
@@ -79,3 +94,7 @@ MonoBehaviour:
     QuestionFour: 
     QuestionFive: 
     Reflex: 
+  activityEight:
+    MemeBackground: 0
+    TextOne: 
+    TextTwo: 

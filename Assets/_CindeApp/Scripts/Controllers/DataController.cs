@@ -153,16 +153,19 @@ namespace Cinde {
         /// <summary>
         /// Set HairCut in current User
         /// </summary>
-        /// <param name="face"></param>
-        public void SetUserHairCut(int face) {
-            userData.user.Avatar.HairCutID = face;
+        /// <param name="hairCut"></param>
+        public void SetUserHairCut(int hairCut) {
+            userData.user.Avatar.HairCutID = hairCut;
         }
         /// <summary>
         /// Set BackHairCut in current User
         /// </summary>
-        /// <param name="face"></param>
-        public void SetUserBackHairCut(int face) {
-            userData.user.Avatar.BackHairCutID = face;
+        /// <param name="BackHairCut"></param>
+        public void SetUserBackHairCut(int BackHairCut) {
+            userData.user.Avatar.BackHairCutID = BackHairCut;
+        }
+        public void SetUserHairColor(int color) {
+            userData.user.Avatar.HairCutColorID = color;
         }
         /// <summary>
         /// Set Dress in current User
@@ -186,7 +189,7 @@ namespace Cinde {
         /// <param name="id"></param>
         /// <returns></returns>
         public Sprite GetBodyByID(int id) {
-            return (Sprite)userData.headsList.HeadShapesList[id];
+            return (Sprite)userData.headsList.BodyShapesList[id];
         }
         /// <summary>
         /// Get a face from database By id
@@ -194,7 +197,7 @@ namespace Cinde {
         /// <param name="id"></param>
         /// <returns></returns>
         public Sprite GetHairCutByID(int id) {
-            return (Sprite)userData.headsList.HairCut[id];
+            return (Sprite)userData.headsList.HairCutList[id];
         }
         /// <summary>
         /// Get a face from database By id
@@ -202,13 +205,16 @@ namespace Cinde {
         /// <param name="id"></param>
         /// <returns></returns>
         public Sprite GetBackHairCutByID(int id) {
-            if (id > userData.headsList.BackHairCut.Count())
+            if (id > userData.headsList.BackHairCutList.Count())
                 return null;
             else
-                return (Sprite)userData.headsList.BackHairCut[id];
+                return (Sprite)userData.headsList.BackHairCutList[id];
         }
         public int GetBackHairCutCount() {
-            return userData.headsList.BackHairCut.Length;
+            return userData.headsList.BackHairCutList.Length;
+        }
+        public Color GetHairColor() {
+            return userData.headsList.HairColorList[userData.user.Avatar.HairCutColorID];
         }
         /// <summary>   
         /// Get a face from database By id
@@ -224,7 +230,7 @@ namespace Cinde {
         /// <param name="id"></param>
         /// <returns></returns>
         public Sprite GetFaceShapeById(int id) {
-            return (Sprite)userData.headsList.HeadShapesList[id];
+            return (Sprite)userData.headsList.BodyShapesList[id];
         }
         /// <summary>
         /// Get a head shape from database by id
@@ -233,6 +239,9 @@ namespace Cinde {
         /// <returns></returns>
         public Sprite GetFaceById(int id) {
             return (Sprite)userData.facesList.FacesList[id];
+        }
+        public Color GetFaceColor() {
+            return userData.headsList.BodyShapeColorList[userData.user.Avatar.BodyShapeColorID];
         }
         /// <summary>
         /// Get a head shape from database by id

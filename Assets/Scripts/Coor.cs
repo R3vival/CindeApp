@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Coor : MonoBehaviour
 {
     [Header("Sprite To Change")]
-    public SpriteRenderer bodyPart;
+    public Image bodyPart;
   
 
     [Header("Sprites To Cycle Through")]
@@ -35,5 +35,6 @@ public class Coor : MonoBehaviour
             currentOptionColor = 0;
         }
         bodyPart.color = colorOptions[currentOptionColor];
+        //Cinde.DataController.instance.s
     }
 }

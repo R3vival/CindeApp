@@ -24,17 +24,25 @@ public class AvatarCreationController : MonoBehaviour {
     }
 
     public void LoadAvatar() {
-        if (AvatarBody != null) 
+        if (AvatarBody != null) {
             AvatarBody.sprite = Cinde.DataController.instance.GetBodyByID(CurrentAvatar.BodyShapeID);
-        if (AvatarHaircut != null)
+            AvatarBody.color = Cinde.DataController.instance.GetFaceColor();
+        }
+
+        if (AvatarHaircut != null) {
             AvatarHaircut.sprite = Cinde.DataController.instance.GetHairCutByID(CurrentAvatar.HairCutID);
+            AvatarHaircut.color = Cinde.DataController.instance.GetHairColor();
+        }
+            
         if (AvatarBackHaircut != null) {
             int tempBackHairCut =CurrentAvatar.BackHairCutID;
             if (tempBackHairCut < Cinde.DataController.instance.GetBackHairCutCount()) {
                 AvatarBackHaircut.sprite = Cinde.DataController.instance.GetBackHairCutByID(tempBackHairCut);
+                AvatarBackHaircut.color = Cinde.DataController.instance.GetHairColor();
                 var tempColor = AvatarBackHaircut.color;
                 tempColor.a = 1f;
                 AvatarBackHaircut.color = tempColor;
+                
             }   
         }            
         if (AvatarDress != null)

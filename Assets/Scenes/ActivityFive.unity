@@ -404,7 +404,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 95983161}
   m_TextViewport: {fileID: 1827766206}
   m_TextComponent: {fileID: 728996862}
   m_Placeholder: {fileID: 808288626}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: efa2ea39b3c9d7e41bd45cc8561c970e, type: 3}
+    m_Font: {fileID: 12800000, guid: 577c2f3d278faf344a9b814c80df20b7, type: 3}
     m_FontSize: 43
     m_FontStyle: 0
     m_BestFit: 0
@@ -2120,7 +2120,7 @@ PrefabInstance:
     - target: {fileID: 4817704386128180643, guid: 865fcd837268d6546899134a3a09ac96,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 865fcd837268d6546899134a3a09ac96, type: 3}
@@ -4961,7 +4961,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: efa2ea39b3c9d7e41bd45cc8561c970e, type: 3}
+    m_Font: {fileID: 12800000, guid: 577c2f3d278faf344a9b814c80df20b7, type: 3}
     m_FontSize: 43
     m_FontStyle: 0
     m_BestFit: 0
@@ -7834,7 +7834,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 946774958}
   m_TextViewport: {fileID: 179870366}
   m_TextComponent: {fileID: 213028322}
   m_Placeholder: {fileID: 976765850}
@@ -9710,7 +9710,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1266612369}
   m_TextViewport: {fileID: 1854725381}
   m_TextComponent: {fileID: 1658860402}
   m_Placeholder: {fileID: 1790603743}
@@ -13601,8 +13601,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFCrees que estas palabras definen lo que en realidad eres?, Si o No
-    \xBFpor qu\xE9?"
+  m_Text: "\xBFCrees que estas palabras definen lo que en realidad eres?, <b>Si</b>
+    o <b>No</b> \xBFpor qu\xE9?"
 --- !u!222 &1883918733
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14561,8 +14561,8 @@ Camera:
   m_GameObject: {fileID: 1962760649}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -14588,8 +14588,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1

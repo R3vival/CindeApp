@@ -1,4 +1,5 @@
 ﻿///By R3-Santiago
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,17 @@ public class SceneManagment : MonoBehaviour {
     #region LoadScene Region
     public void LoadMainMenu() {
         SceneManager.LoadScene(Scenes.MainScene);
+    }
+    public void LoadLogos() {
+        if (!PlayerPrefs.HasKey("FirstTime")) {
+            StartCoroutine("LoadLogosCoroutine");
+        } else
+            SceneManager.LoadScene(Scenes.Logos);
+    }
+
+    IEnumerator LoadLogosCoroutine() {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(Scenes.Logos);
     }
     public void LoadEditCharacterFromLogos() {
         if (!PlayerPrefs.HasKey("FirstTime")) {            
@@ -60,6 +72,7 @@ public class SceneManagment : MonoBehaviour {
     #endregion
 }
 public class Scenes {
+    public static string Logos = "PantallaInicio";
     public static string MainScene = "MenuPrincipal";
     public static string CreateAvatar = "CreateCharacter";
     public static string ActivityOne = "ActivityOne";

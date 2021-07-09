@@ -16,20 +16,24 @@ namespace Cinde {
     }
     [Serializable]
     public class Avatar {
-        public int BodyShapeID;
-        public int HairCutID;
-        public int BackHairCutID;
-        public int FaceID;
-        public int DressID;
-        public int MoodID;
+        public int BodyShapeID = 0;
+        public int BodyShapeColorID = 0;
+        public int HairCutID = 0;
+        public int HairCutColorID = 0;
+        public int BackHairCutID = 0;
+        public int FaceID = 0;
+        public int DressID = 0;
+        public int MoodID = 0;
 
         [HideInInspector] public bool FirstSetup = false;
     }
     [Serializable]
     public class HeadShapes {
-        public Sprite[] HeadShapesList;
-        public Sprite[] HairCut;
-        public Sprite[] BackHairCut;
+        public Sprite[] BodyShapesList;
+        public Color [] BodyShapeColorList;
+        public Sprite[] HairCutList;
+        public Sprite[] BackHairCutList;
+        public Color[] HairColorList;
     }
     [Serializable]
     public class Faces {

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class ChangehairColor : MonoBehaviour
 {
     [Header("Sprite To Change")]
-    public SpriteRenderer bodyPart;
-    public SpriteRenderer backhairPart;
+    public Image bodyPart;
+    public Image backhairPart;
 
     [Header("Sprites To Cycle Through")]
 
@@ -34,6 +34,16 @@ public class ChangehairColor : MonoBehaviour
             currentOptionColor = 0;
         }
         bodyPart.color = colorOptions[currentOptionColor];
-        backhairPart.color = colorOptions[currentOptionColor];
+        if(Cinde.DataController.instance.GetUserAvatar().BackHairCutID != 99) {
+            Color tempColor = backhairPart.color;
+            tempColor.a = 1f;
+            backhairPart.color = tempColor;
+            backhairPart.color = colorOptions[currentOptionColor];
+        } else {
+            Color tempColor = backhairPart.color;
+            tempColor.a = 0f;
+            backhairPart.color = tempColor;
+        }
+        Cinde.DataController.instance.SetUserHairColor(currentOptionColor);
     }
 }
