@@ -150,6 +150,10 @@ namespace Cinde {
         public void SetUserFace(int face) {
             userData.user.Avatar.FaceID = face;
         }
+        public void SetUserFaceColor(int id)
+        {
+            userData.user.Avatar.BodyShapeColorID = id;
+        }
         /// <summary>
         /// Set HairCut in current User
         /// </summary>

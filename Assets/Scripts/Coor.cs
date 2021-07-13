@@ -35,6 +35,6 @@ public class Coor : MonoBehaviour
             currentOptionColor = 0;
         }
         bodyPart.color = colorOptions[currentOptionColor];
-        //Cinde.DataController.instance.s
+        Cinde.DataController.instance.SetUserFaceColor(currentOptionColor);
     }
 }
