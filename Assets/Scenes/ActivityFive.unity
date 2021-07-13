@@ -11341,7 +11341,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Ahora escribe todas aquellas palabras que utilizan las dem\xE1s personas
-    para definirte y que si te guste escuchar."
+    para definirte y que <b>SI</b> te guste escuchar."
 --- !u!222 &1480472213
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13601,8 +13601,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFCrees que estas palabras definen lo que en realidad eres?, <b>Si</b>
-    o <b>No</b> \xBFpor qu\xE9?"
+  m_Text: "\xBFCrees que estas palabras definen lo que en realidad eres?, <b>SI</b>
+    o <b>NO</b> \xBFpor qu\xE9?"
 --- !u!222 &1883918733
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14984,7 +14984,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Escribe cu\xE1les son aquellas palabras que has escuchado sobre ti que
-    no te gusta escuchar."
+    <b>NO</b> te gusta escuchar."
 --- !u!222 &1995263308
 CanvasRenderer:
   m_ObjectHideFlags: 0

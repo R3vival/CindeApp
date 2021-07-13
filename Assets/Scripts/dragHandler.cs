@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class dragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
+    public ViolenceTypes type;
     public string word;
     public ItemPool itemPool;
     public static GameObject itemDragging;
@@ -51,10 +52,5 @@ public class dragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
             transform.position = startPosition;
             transform.SetParent(startParent);
         }
-    }
-
-    void Update()
-    {
-
     }
 }

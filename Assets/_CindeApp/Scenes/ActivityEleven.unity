@@ -311,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa68e0bec1f8084aa00e864b9340ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 5
   word: 
   itemPool: {fileID: 0}
 --- !u!114 &2416450
@@ -956,6 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa68e0bec1f8084aa00e864b9340ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 4
   word: 
   itemPool: {fileID: 0}
 --- !u!114 &65155747
@@ -1103,10 +1105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 122998668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff03d694f453bf14ebf825294a31aeff, type: 3}
+  m_Script: {fileID: 11500000, guid: 217fc18b3305e47fbb73762c7649bfb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  Words: []
+  type: 3
 --- !u!114 &122998674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1888,6 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 0
 --- !u!1 &339856333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3554,6 +3558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 4
 --- !u!114 &706367836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3695,6 +3700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa68e0bec1f8084aa00e864b9340ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 1
   word: 
   itemPool: {fileID: 0}
 --- !u!114 &718630519
@@ -3998,6 +4004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa68e0bec1f8084aa00e864b9340ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 3
   word: 
   itemPool: {fileID: 0}
 --- !u!114 &784685503
@@ -4967,6 +4974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa68e0bec1f8084aa00e864b9340ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 2
   word: 
   itemPool: {fileID: 0}
 --- !u!114 &976789484
@@ -5121,6 +5129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 0
 --- !u!1 &1035073471
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 0
 --- !u!1 &1093446920
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,6 +5811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 2
 --- !u!114 &1194268347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5936,6 +5947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 5
 --- !u!114 &1234818371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6797,6 +6809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 1
 --- !u!1 &1436602510
 GameObject:
   m_ObjectHideFlags: 0
@@ -6911,6 +6924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 0
 --- !u!1 &1464516284
 GameObject:
   m_ObjectHideFlags: 0
@@ -7676,6 +7690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Words: []
+  type: 0
 --- !u!1 &1811931582
 GameObject:
   m_ObjectHideFlags: 0
